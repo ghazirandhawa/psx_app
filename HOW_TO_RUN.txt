@@ -1,0 +1,28 @@
+Backtest graph viewer (Streamlit) — minimal deploy bundle
+==========================================================
+
+Layout (keep as-is next to each other):
+  filter_graph_viewer.py
+  filter_latest_summaries.py
+  symbol_graph_tools.py
+  requirements.txt
+  compiled predictions vs actuals wide V 1.0.xlsx   (pilot workbook for the Data tables tab)
+  backtest_runs/                                     (runs, CSVs, charts, xlsx per symbol)
+
+Server setup
+------------
+  python3 -m venv .venv
+  source .venv/bin/activate          # Windows: .venv\Scripts\activate
+  pip install --upgrade pip
+  pip install -r requirements.txt
+
+Run
+---
+  streamlit run filter_graph_viewer.py
+
+Optional: bind/host/port, e.g.:
+  streamlit run filter_graph_viewer.py --server.address 0.0.0.0 --server.port 8501
+
+The app resolves paths relative to the directory containing filter_graph_viewer.py (repo root
+in this bundle). Do not move backtest_runs or the pilot xlsx without keeping the same relative
+names/locations, or update the "Backtest runs folder" text in the sidebar if you relocate data.
