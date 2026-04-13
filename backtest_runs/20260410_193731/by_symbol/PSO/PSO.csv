@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PSO,2026-03-04,0.016714954312458286,0.0030802802805942,True,0.0,BUY,BUY,1656.0,1656.0,101656.0,101656.0
 PSO,2026-03-05,0.07809074967119689,-0.0024716076952194,False,7866.0,HOLD,BUY,0.0,7866.0,101656.0,109522.0
 PSO,2026-03-06,-0.024119351395313293,-0.0047538004199533,True,0.0,HOLD,HOLD,-0.0,-0.0,101656.0,109522.0

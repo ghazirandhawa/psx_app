@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FDPL,2026-03-04,0.03631284916201105,-0.0172558209381384,False,6499.9999999999945,SHORT,BUY,-3249.9999999999973,3249.9999999999973,96750.0,103250.0
 FDPL,2026-03-05,0.14285714285714302,-0.0122950585738668,False,26500.00000000001,SHORT,BUY,-13250.000000000005,13250.000000000005,83500.0,116500.0
 FDPL,2026-03-06,-0.03537735849056611,-0.0013863062912927,True,0.0,SHORT,SHORT,3750.000000000009,3750.000000000009,87250.0,120250.00000000001

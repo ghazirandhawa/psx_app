@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 INDU,2026-03-04,-0.0038178733031675183,-0.0161887735426983,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 INDU,2026-03-05,-0.03156747439926999,-0.0153843038590132,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 INDU,2026-03-06,-0.015667450126417903,-0.0131579279420195,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0

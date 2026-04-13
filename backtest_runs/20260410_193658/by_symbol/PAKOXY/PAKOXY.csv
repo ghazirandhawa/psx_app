@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PAKOXY,2026-03-04,-0.029561029820336926,-0.0022361645595743,True,0.0,SHORT,SHORT,3199.9799999999846,3199.9799999999846,103199.97999999998,103199.97999999998
 PAKOXY,2026-03-05,0.026835133793945865,0.000446479198076,True,0.0,BUY,BUY,2819.029999999989,2819.029999999989,106019.00999999998,106019.00999999998
 PAKOXY,2026-03-06,-0.011115241635687778,0.0015962361928834,False,2397.9800000000073,BUY,SHORT,-1198.9900000000036,1198.9900000000036,104820.01999999997,107217.99999999997

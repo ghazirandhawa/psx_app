@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HCAR,2026-03-04,0.02092024157897998,-0.0298169554358512,False,4065.599999999982,SHORT,BUY,-2032.799999999991,2032.799999999991,97967.20000000001,102032.79999999999
 HCAR,2026-03-05,0.03622613892785265,-0.0286511645621012,False,7187.399999999997,SHORT,BUY,-3593.6999999999985,3593.6999999999985,94373.50000000001,105626.49999999999
 HCAR,2026-03-06,-0.003590135954328666,-0.0277337748028581,True,0.0,SHORT,SHORT,369.0499999999911,369.0499999999911,94742.55,105995.54999999997

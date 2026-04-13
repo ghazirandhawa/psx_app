@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HUMNL,2026-03-04,0.009132420091324311,0.0216836339554075,True,0.0,BUY,BUY,861.3000000000122,861.3000000000122,100861.30000000002,100861.30000000002
 HUMNL,2026-03-05,0.09321266968325781,0.0189870478162021,True,0.0,BUY,BUY,8871.389999999994,8871.389999999994,109732.69,109732.69
 HUMNL,2026-03-06,-0.023178807947019764,0.0195068153973228,False,2411.6399999999944,BUY,HOLD,-2411.6399999999944,-0.0,107321.05000000002,109732.69

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GLAXO,2026-03-04,-0.009741609741609647,-0.0060150164942947,True,0.0,SHORT,SHORT,1036.4799999999914,1036.4799999999914,101036.48,101036.48
 GLAXO,2026-03-05,0.022494151520604744,-0.0032733762201521,False,4740.0,SHORT,BUY,-2370.0,2370.0,98666.48,103406.48
 GLAXO,2026-03-06,-0.04476123430716883,-0.0042426806609491,True,0.0,SHORT,SHORT,4822.159999999997,4822.159999999997,103488.63999999998,108228.63999999998

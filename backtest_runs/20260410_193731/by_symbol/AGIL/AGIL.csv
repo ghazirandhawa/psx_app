@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AGIL,2026-03-04,-0.03481305324349304,0.0041313646217701,False,4010.469999999986,BUY,HOLD,-4010.469999999986,-0.0,95989.53000000001,100000.0
 AGIL,2026-03-05,0.017110396276777795,0.0073257149362681,True,0.0,BUY,BUY,1902.5,1902.5,97892.03000000001,101902.5
 AGIL,2026-03-06,-0.04865083103425083,0.0144512167093715,False,5502.030000000013,BUY,HOLD,-5502.030000000013,-0.0,92390.0,101902.5

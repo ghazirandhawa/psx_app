@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CLVL,2026-03-04,0.007263922518159882,-0.0036027235773625,False,1401.8399999999979,SHORT,BUY,-700.9199999999989,700.9199999999989,99299.08,100700.92
 CLVL,2026-03-05,0.08653846153846145,0.0020021244195114,True,0.0,BUY,BUY,8411.04,8411.04,107710.12,109111.95999999999
 CLVL,2026-03-06,0.0,0.0101437459381435,False,0.0,BUY,HOLD,0.0,0.0,107710.12,109111.95999999999

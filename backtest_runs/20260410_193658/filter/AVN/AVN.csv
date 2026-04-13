@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AVN,2026-03-04,-0.003385240352064889,0.0036871070904546,False,622.5999999999867,BUY,SHORT,-311.29999999999336,311.29999999999336,99688.70000000001,100311.29999999999
 AVN,2026-03-05,0.08355978260869557,0.0036043567776102,True,0.0,BUY,BUY,7657.979999999991,7657.979999999991,107346.68,107969.27999999998
 AVN,2026-03-06,-0.02037617554858928,0.0012161075861737,False,4046.899999999991,BUY,SHORT,-2023.4499999999955,2023.4499999999955,105323.23000000001,109992.72999999998

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CLCPS,2026-03-04,-0.03821656050955413,0.0059057958056839,False,4316.520000000004,BUY,HOLD,-4316.520000000004,-0.0,95683.48,100000.0
 CLCPS,2026-03-05,-0.0033112582781458233,0.0387679680656684,False,359.7100000000083,BUY,HOLD,-359.7100000000083,-0.0,95323.76999999999,100000.0
 CLCPS,2026-03-06,-0.013289036544850363,0.0201990395484921,False,1438.8399999999854,BUY,HOLD,-1438.8399999999854,-0.0,93884.93000000001,100000.0

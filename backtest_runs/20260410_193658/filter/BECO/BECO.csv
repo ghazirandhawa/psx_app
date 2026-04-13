@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 BECO,2026-03-04,-0.029914529914529808,0.0181957858823001,False,6153.839999999986,BUY,SHORT,-3076.919999999993,3076.919999999993,96923.08,103076.92
 BECO,2026-03-05,0.07268722466960353,-0.0305852130904195,False,14505.480000000003,SHORT,BUY,-7252.740000000002,7252.740000000002,89670.34000000001,110329.65999999999
 BECO,2026-03-06,-0.008213552361396315,-0.0322311904071989,True,0.0,SHORT,SHORT,879.1200000000008,879.1200000000008,90549.46,111208.78

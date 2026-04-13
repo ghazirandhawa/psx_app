@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MSCL,2026-03-04,0.01674641148325362,-0.0044716203848949,False,1529.4300000000062,HOLD,BUY,0.0,1529.4300000000062,100000.0,101529.43000000001
 MSCL,2026-03-05,0.05882352941176472,-0.0013923552950481,False,5462.25,HOLD,BUY,0.0,5462.25,100000.0,106991.68000000001
 MSCL,2026-03-06,0.0,0.0011413831576705,False,0.0,BUY,HOLD,0.0,0.0,100000.0,106991.68000000001

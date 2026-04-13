@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TCORP,2026-03-04,0.03199002908184467,0.005884492692402,True,0.0,BUY,BUY,2658.0399999999986,2658.0399999999986,102658.04,102658.04
 TCORP,2026-03-05,0.0837359098228665,0.0058911491706626,True,0.0,BUY,BUY,7180.160000000006,7180.160000000006,109838.20000000001,109838.20000000001
 TCORP,2026-03-06,0.030832095096582357,0.0057322812729705,True,0.0,BUY,BUY,2865.159999999994,2865.159999999994,112703.36,112703.36

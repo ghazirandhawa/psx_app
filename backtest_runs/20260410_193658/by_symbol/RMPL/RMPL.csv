@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 RMPL,2026-03-04,0.013031658857143968,-0.0234859349824035,False,2602.819999999989,SHORT,BUY,-1301.4099999999944,1301.4099999999944,98698.59000000001,101301.40999999999
 RMPL,2026-03-05,-0.0068337724272231615,-0.0201558875914604,True,0.0,SHORT,SHORT,691.349999999984,691.349999999984,99389.93999999999,101992.75999999998
 RMPL,2026-03-06,0.0071030378405363415,-0.016048489709177,False,1427.3599999999824,SHORT,BUY,-713.6799999999912,713.6799999999912,98676.26,102706.43999999997

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PSX,2026-03-04,0.04024089789214336,0.0004920175534347,True,0.0,BUY,BUY,4362.959999999996,4362.959999999996,104362.95999999999,104362.95999999999
 PSX,2026-03-05,-0.007631578947368434,-0.0003942860463351,True,0.0,SHORT,SHORT,860.7199999999975,860.7199999999975,105223.68,105223.68
 PSX,2026-03-06,-0.03208697958101303,-0.0023174019443576,True,0.0,SHORT,SHORT,3591.2800000000025,3591.2800000000025,108814.95999999999,108814.95999999999

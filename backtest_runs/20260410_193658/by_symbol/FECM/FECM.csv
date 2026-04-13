@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FECM,2026-03-04,-0.06419939577039269,0.0243597195782934,False,10565.499999999996,BUY,SHORT,-5282.749999999998,5282.749999999998,94717.25,105282.75
 FECM,2026-03-05,0.09685230024213065,0.0276003629830978,True,0.0,BUY,BUY,7457.999999999995,7457.999999999995,102175.25,112740.75
 FECM,2026-03-06,0.09786607799852831,0.0474888964406403,True,0.0,BUY,BUY,8265.95,8265.95,110441.2,121006.7

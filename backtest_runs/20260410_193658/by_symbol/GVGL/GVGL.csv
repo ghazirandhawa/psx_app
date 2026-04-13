@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GVGL,2026-03-04,0.0796682098765431,0.0024745973131941,True,0.0,BUY,BUY,8251.73999999999,8251.73999999999,108251.73999999999,108251.73999999999
 GVGL,2026-03-05,-0.012685367160979122,0.0030742116479528,False,2837.1600000000035,BUY,SHORT,-1418.5800000000017,1418.5800000000017,106833.15999999999,109670.31999999999
 GVGL,2026-03-06,-0.004705030763662688,-4.57174583865759e-05,True,0.0,SHORT,SHORT,519.479999999996,519.479999999996,107352.63999999998,110189.79999999999

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FATIMA,2026-03-04,-0.03933503501538049,-0.0069575695364515,True,0.0,SHORT,SHORT,4573.609999999993,4573.609999999993,104573.60999999999,104573.60999999999
 FATIMA,2026-03-05,-0.008243629922332851,-0.0085514673082165,True,0.0,SHORT,SHORT,920.8100000000061,920.8100000000061,105494.42,105494.42
 FATIMA,2026-03-06,-0.031806003984337416,-0.0040159051796783,True,0.0,SHORT,SHORT,3523.4299999999967,3523.4299999999967,109017.84999999999,109017.84999999999

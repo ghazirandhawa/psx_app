@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 RICL,2026-03-04,-0.028995279838165855,-0.0067417111579849,True,0.0,SHORT,SHORT,2765.329999999998,2765.329999999998,102765.33,102765.33
 RICL,2026-03-05,0.04027777777777786,0.0027411069224895,True,0.0,BUY,BUY,3729.9800000000005,3729.9800000000005,106495.31,106495.31
 RICL,2026-03-06,0.08210947930574108,-0.0016927071161426,False,15820.260000000006,SHORT,BUY,-7910.130000000003,7910.130000000003,98585.18,114405.44

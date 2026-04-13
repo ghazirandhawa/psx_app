@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SGPL,2026-03-04,0.0021802325581394832,-0.085852859041356,False,206.4599999999956,HOLD,BUY,0.0,206.4599999999956,100000.0,100206.45999999999
 SGPL,2026-03-05,0.09789702683103707,-0.092798714583569,False,9290.70000000001,HOLD,BUY,0.0,9290.70000000001,100000.0,109497.16
 SGPL,2026-03-06,-0.029062087186261687,-0.0893075269620094,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,109497.16

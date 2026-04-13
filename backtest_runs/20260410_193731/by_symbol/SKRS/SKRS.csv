@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SKRS,2026-03-04,0.027735753908219918,0.0232820928949336,True,0.0,BUY,BUY,2658.1500000000033,2658.1500000000033,102658.15000000001,102658.15000000001
 SKRS,2026-03-05,-0.004416094210009769,0.0012772068611096,False,434.9699999999993,BUY,HOLD,-434.9699999999993,-0.0,102223.18000000001,102658.15000000001
 SKRS,2026-03-06,0.03548546081813719,-0.0059560637621645,False,3479.7600000000116,HOLD,BUY,0.0,3479.7600000000116,102223.18000000001,106137.91000000002

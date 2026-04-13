@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 UVIC,2026-03-04,-0.08671023965141611,0.1821422381881025,False,9044.549999999992,BUY,HOLD,-9044.549999999992,-0.0,90955.45000000001,100000.0
 UVIC,2026-03-05,0.0,0.1811392541148111,False,0.0,BUY,HOLD,0.0,0.0,90955.45000000001,100000.0
 UVIC,2026-03-06,0.0,0.1961048068567602,False,0.0,BUY,HOLD,0.0,0.0,90955.45000000001,100000.0

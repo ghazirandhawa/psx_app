@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DWAE,2026-03-04,0.10031948881789132,-0.0339978504827975,False,8262.909999999993,HOLD,BUY,0.0,8262.909999999993,100000.0,108262.90999999999
 DWAE,2026-03-05,0.0882694541231126,-0.0265123403416441,False,7999.7599999999975,HOLD,BUY,0.0,7999.7599999999975,100000.0,116262.66999999998
 DWAE,2026-03-06,0.04055496264674496,-0.0302065194592443,False,3999.8800000000083,HOLD,BUY,0.0,3999.8800000000083,100000.0,120262.55

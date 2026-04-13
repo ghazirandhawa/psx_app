@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 QUICE,2026-03-04,-0.03738317757009335,0.0078430845916182,False,8425.359999999982,BUY,SHORT,-4212.679999999991,4212.679999999991,95787.32,104212.68
 QUICE,2026-03-05,0.04516673701983964,0.0100755774992554,True,0.0,BUY,BUY,4899.530000000002,4899.530000000002,100686.85,109112.20999999999
 QUICE,2026-03-06,-0.052504038772213324,0.023847056106228,False,11905.400000000007,BUY,SHORT,-5952.7000000000035,5952.7000000000035,94734.15000000001,115064.91

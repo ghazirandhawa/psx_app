@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PTC,2026-03-04,-0.025009619084263135,-0.013479599,True,0.0,SHORT,SHORT,2512.8999999999946,2512.8999999999946,102512.9,102512.9
 PTC,2026-03-05,0.09885556432517761,0.016267246,True,0.0,BUY,BUY,9684.329999999996,9684.329999999996,112197.23,112197.23
 PTC,2026-03-06,-0.029089603160351918,0.029342238,False,6262.91999999999,BUY,SHORT,-3131.459999999995,3131.459999999995,109065.76999999999,115328.68999999999

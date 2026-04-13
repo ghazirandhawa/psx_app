@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MWMP,2026-03-04,-0.018645731108930308,-0.0396497168353727,True,0.0,SHORT,SHORT,1386.9999999999964,1386.9999999999964,101387.0,101387.0
 MWMP,2026-03-05,0.0009999999999998899,0.0037503736927937,True,0.0,BUY,BUY,72.99999999999844,72.99999999999844,101460.0,101460.0
 MWMP,2026-03-06,-0.0032467532467532756,-0.0164990043285456,True,0.0,SHORT,SHORT,237.25000000000466,237.25000000000466,101697.25,101697.25

@@ -211,12 +211,12 @@ def round_numeric_two_decimals(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def insert_portfolio_between_equities(df: pd.DataFrame) -> pd.DataFrame:
-    """Order: final_equity_predicted, portfolio, final_equity_oracle (then rest unchanged)."""
+    """Order: final_equity_predicted, portfolio, final_equity_actual (then rest unchanged)."""
     if "portfolio" not in df.columns:
         return df
-    pred, ora = "final_equity_predicted", "final_equity_oracle"
+    pred, act = "final_equity_predicted", "final_equity_actual"
     cols = [c for c in df.columns if c != "portfolio"]
-    if pred in cols and ora in cols:
+    if pred in cols and act in cols:
         i = cols.index(pred)
         cols = cols[: i + 1] + ["portfolio"] + cols[i + 1 :]
     else:

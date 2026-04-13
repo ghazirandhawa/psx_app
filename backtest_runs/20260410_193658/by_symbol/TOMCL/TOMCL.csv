@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TOMCL,2026-03-04,-0.039010189228529946,0.0167811425005275,False,8892.240000000023,BUY,SHORT,-4446.120000000012,4446.120000000012,95553.87999999999,104446.12000000001
 TOMCL,2026-03-05,0.039382005452893276,-0.0123711693451457,False,8626.800000000028,SHORT,BUY,-4313.400000000014,4313.400000000014,91240.47999999998,108759.52000000002
 TOMCL,2026-03-06,-0.03235208394054212,-0.0006241330517121,True,0.0,SHORT,SHORT,3682.979999999998,3682.979999999998,94923.45999999998,112442.50000000003

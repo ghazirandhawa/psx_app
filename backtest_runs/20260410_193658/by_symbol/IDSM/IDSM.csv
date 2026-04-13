@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 IDSM,2026-03-04,0.09577464788732382,-0.0042268501720872,False,18183.199999999993,SHORT,BUY,-9091.599999999997,9091.599999999997,90908.40000000001,109091.59999999999
 IDSM,2026-03-05,-0.03753213367609254,0.0073999948372163,False,7808.0800000000045,BUY,SHORT,-3904.0400000000022,3904.0400000000022,87004.36,112995.64
 IDSM,2026-03-06,-0.010149572649572502,0.0015590457505923,False,2032.2399999999757,BUY,SHORT,-1016.1199999999878,1016.1199999999878,85988.24000000002,114011.75999999998

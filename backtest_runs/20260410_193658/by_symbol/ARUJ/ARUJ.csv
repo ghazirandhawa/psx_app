@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ARUJ,2026-03-04,0.0,0.0398831910890879,False,0.0,BUY,HOLD,0.0,0.0,100000.0,100000.0
 ARUJ,2026-03-05,-0.041015625,0.0385600009351127,False,10181.639999999998,BUY,SHORT,-5090.819999999999,5090.819999999999,94909.18000000001,105090.81999999999
 ARUJ,2026-03-06,-0.09572301425661911,0.0423335628679613,False,22787.47999999999,BUY,SHORT,-11393.739999999994,11393.739999999994,83515.44,116484.56

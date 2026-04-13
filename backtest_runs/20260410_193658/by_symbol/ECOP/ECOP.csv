@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ECOP,2026-03-04,-0.04666509545133157,0.039265268,False,10109.879999999985,BUY,SHORT,-5054.939999999992,5054.939999999992,94945.06000000001,105054.93999999999
 ECOP,2026-03-05,0.0899876390605685,-0.0034843169,False,18585.840000000004,SHORT,BUY,-9292.920000000002,9292.920000000002,85652.14000000001,114347.85999999999
 ECOP,2026-03-06,-0.03855749603084602,0.0034587048,False,8680.200000000015,BUY,SHORT,-4340.100000000008,4340.100000000008,81312.04000000001,118687.95999999999

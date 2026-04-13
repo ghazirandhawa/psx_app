@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SASML,2026-03-04,-0.09936,0.0450878417853053,False,22306.320000000003,BUY,SHORT,-11153.160000000002,11153.160000000002,88846.84,111153.16
 SASML,2026-03-05,0.0,0.0413130617257609,False,0.0,BUY,HOLD,0.0,0.0,88846.84,111153.16
 SASML,2026-03-06,0.0888701367916147,0.0432302897812084,True,0.0,BUY,BUY,8984.489999999996,8984.489999999996,97831.32999999999,120137.65

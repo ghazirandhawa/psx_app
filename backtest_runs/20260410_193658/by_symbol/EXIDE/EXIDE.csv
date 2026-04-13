@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 EXIDE,2026-03-04,-0.028803309993634674,0.0069358794200295,False,6005.580000000007,BUY,SHORT,-3002.7900000000036,3002.7900000000036,96997.20999999999,103002.79000000001
 EXIDE,2026-03-05,-7.022307530246685e-05,0.0075420103323327,False,14.219999999987067,BUY,SHORT,-7.1099999999935335,7.1099999999935335,96990.1,103009.9
 EXIDE,2026-03-06,-0.050751439674142085,0.007505617025568,False,10276.320000000003,BUY,SHORT,-5138.160000000002,5138.160000000002,91851.94,108148.06

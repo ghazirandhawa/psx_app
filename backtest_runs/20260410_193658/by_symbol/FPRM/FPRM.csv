@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FPRM,2026-03-04,0.020408163265306145,0.0486576277206405,True,0.0,BUY,BUY,1935.6000000000017,1935.6000000000017,101935.6,101935.6
 FPRM,2026-03-06,-0.01750000000000007,0.0565412361408284,False,3387.300000000014,BUY,SHORT,-1693.650000000007,1693.650000000007,100241.95,103629.25000000001
 FPRM,2026-03-09,-0.10008481764206956,0.0559640084305918,False,19033.399999999994,BUY,SHORT,-9516.699999999997,9516.699999999997,90725.25,113145.95000000001

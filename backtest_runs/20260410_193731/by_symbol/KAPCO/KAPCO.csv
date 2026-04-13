@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KAPCO,2026-03-04,-0.01406964474147021,0.0147520206986734,False,1486.3999999999946,BUY,HOLD,-1486.3999999999946,-0.0,98513.6,100000.0
 KAPCO,2026-03-05,0.036746343203710286,0.014593171421408,True,0.0,BUY,BUY,3827.479999999991,3827.479999999991,102341.08,103827.48
 KAPCO,2026-03-06,0.011355815554026316,0.0138346201917707,True,0.0,BUY,BUY,1226.2800000000068,1226.2800000000068,103567.36,105053.76

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JVDC,2026-03-04,0.005459508644221955,-0.0242885925722301,False,576.5999999999946,HOLD,BUY,0.0,576.5999999999946,100000.0,100576.59999999999
 JVDC,2026-03-05,0.03466063348416282,-0.0205509691359816,False,3680.6299999999983,HOLD,BUY,0.0,3680.6299999999983,100000.0,104257.23
 JVDC,2026-03-06,-0.09997376016793491,-0.0281351686228372,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,104257.23

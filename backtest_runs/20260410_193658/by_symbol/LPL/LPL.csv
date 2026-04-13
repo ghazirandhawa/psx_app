@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 LPL,2026-03-04,0.03726328649969446,-0.0103726330713186,False,6744.1599999999935,SHORT,BUY,-3372.0799999999967,3372.0799999999967,96627.92,103372.08
 LPL,2026-03-05,0.07832744405182557,-0.0030069753732758,False,14704.479999999981,SHORT,BUY,-7352.239999999991,7352.239999999991,89275.68000000001,110724.31999999999
 LPL,2026-03-06,-0.014199890770070889,-0.00101089734033,True,0.0,SHORT,SHORT,1437.279999999989,1437.279999999989,90712.96,112161.59999999998

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CPPL,2026-03-04,0.02757142857142858,-0.0101685144589909,False,5404.000000000019,SHORT,BUY,-2702.0000000000095,2702.0000000000095,97297.99999999999,102702.00000000001
 CPPL,2026-03-05,0.037536493813429495,-0.0084841266998712,False,7559.999999999968,SHORT,BUY,-3779.999999999984,3779.999999999984,93518.0,106482.0
 CPPL,2026-03-06,-0.035374514270400614,-0.0058215468187795,True,0.0,SHORT,SHORT,3696.000000000001,3696.000000000001,97214.0,110178.0

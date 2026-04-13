@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 LOTCHEM,2026-03-04,-0.041207474844274006,0.0156648925722538,False,3706.5999999999976,BUY,HOLD,-3706.5999999999976,-0.0,96293.40000000001,100000.0
 LOTCHEM,2026-03-05,0.04897551224387797,0.0142899709738511,True,0.0,BUY,BUY,4223.7999999999865,4223.7999999999865,100517.19999999998,104223.79999999999
 LOTCHEM,2026-03-06,-0.025726536445926595,0.0165994521711624,False,2327.3999999999965,BUY,HOLD,-2327.3999999999965,-0.0,98189.79999999999,104223.79999999999

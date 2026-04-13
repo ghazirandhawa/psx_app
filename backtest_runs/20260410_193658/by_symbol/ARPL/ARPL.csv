@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ARPL,2026-03-04,0.044835460040295594,-0.0100364575424296,False,9847.099999999999,SHORT,BUY,-4923.549999999999,4923.549999999999,95076.45,104923.55
 ARPL,2026-03-05,-0.0016969198333933733,0.0068177374380976,False,389.40000000001476,BUY,SHORT,-194.70000000000738,194.70000000000738,94881.75,105118.25
 ARPL,2026-03-06,-0.021273307922118012,-0.0104090001036489,True,0.0,SHORT,SHORT,2436.699999999997,2436.699999999997,97318.45,107554.95

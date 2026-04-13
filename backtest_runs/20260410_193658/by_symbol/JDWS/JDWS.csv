@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JDWS,2026-03-04,-0.026002772436614086,0.013488271189364,False,5489.359999999998,BUY,SHORT,-2744.679999999999,2744.679999999999,97255.32,102744.68
 JDWS,2026-03-05,0.016918026765833316,0.0161178079681063,True,0.0,BUY,BUY,1739.320000000001,1739.320000000001,98994.64,104484.0
 JDWS,2026-03-06,0.015079006772009018,0.0134314094108319,True,0.0,BUY,BUY,1576.4800000000016,1576.4800000000016,100571.12000000001,106060.48

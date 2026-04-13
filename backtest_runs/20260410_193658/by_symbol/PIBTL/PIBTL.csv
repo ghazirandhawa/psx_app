@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PIBTL,2026-03-04,-0.02351313969571245,-0.040462494,True,0.0,SHORT,SHORT,2474.520000000012,2474.520000000012,102474.52000000002,102474.52000000002
 PIBTL,2026-03-05,0.05311614730878178,0.005065748,True,0.0,BUY,BUY,5458.5,5458.5,107933.02000000002,107933.02000000002
 PIBTL,2026-03-06,-0.016139878950907738,0.018411104,False,3493.4399999999773,BUY,SHORT,-1746.7199999999887,1746.7199999999887,106186.30000000002,109679.74

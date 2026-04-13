@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 NITGETF,2026-03-04,-0.011557353366079104,-0.0255968,True,0.0,SHORT,SHORT,1206.7999999999956,1206.7999999999956,101206.79999999999,101206.79999999999
 NITGETF,2026-03-05,0.020754165448699124,0.022321418,True,0.0,BUY,BUY,2142.0700000000024,2142.0700000000024,103348.87,103348.87
 NITGETF,2026-03-06,-0.012886597938144395,0.00523685,False,2715.300000000017,BUY,SHORT,-1357.6500000000085,1357.6500000000085,101991.21999999999,104706.52

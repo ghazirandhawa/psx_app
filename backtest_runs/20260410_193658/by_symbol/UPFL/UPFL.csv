@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 UPFL,2026-03-04,0.052268127653290364,-0.0632670303039526,False,10051.600000000006,SHORT,BUY,-5025.800000000003,5025.800000000003,94974.2,105025.8
 UPFL,2026-03-05,0.01577386835342942,-0.001481237387718,False,3192.0,SHORT,BUY,-1596.0,1596.0,93378.2,106621.8
 UPFL,2026-03-06,-0.024295555382579548,-0.0089221686660545,True,0.0,SHORT,SHORT,2497.0,2497.0,95875.2,109118.8

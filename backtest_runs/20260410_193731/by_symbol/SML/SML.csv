@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SML,2026-03-05,-0.09681574239713775,-0.0045021446,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 SML,2026-03-06,-0.011487878307716692,0.021357795,False,1177.4000000000024,BUY,HOLD,-1177.4000000000024,-0.0,98822.59999999999,100000.0
 SML,2026-03-10,0.0,0.017492665,False,0.0,BUY,HOLD,0.0,0.0,98822.59999999999,100000.0

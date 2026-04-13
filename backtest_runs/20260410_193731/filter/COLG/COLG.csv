@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 COLG,2026-03-04,0.007200631288222459,-0.0067824561720676,False,722.6999999999975,HOLD,BUY,0.0,722.6999999999975,100000.0,100722.7
 COLG,2026-03-05,0.005003516706581834,-0.007638440994395,False,505.7999999999902,HOLD,BUY,0.0,505.7999999999902,100000.0,101228.49999999999
 COLG,2026-03-06,-0.004845725219917996,-0.0063758638970972,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,101228.49999999999

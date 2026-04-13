@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 LSECL,2026-03-04,-0.001879699248120481,-0.058443617,True,0.0,SHORT,SHORT,190.84000000001288,190.84000000001288,100190.84000000001,100190.84000000001
 LSECL,2026-03-05,0.03201506591337111,0.010285361,True,0.0,BUY,BUY,3244.2800000000157,3244.2800000000157,103435.12000000002,103435.12000000002
 LSECL,2026-03-06,-0.012773722627737238,0.0032912786,False,2671.7600000000107,BUY,SHORT,-1335.8800000000053,1335.8800000000053,102099.24000000002,104771.00000000003

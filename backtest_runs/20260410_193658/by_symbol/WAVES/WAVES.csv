@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 WAVES,2026-03-04,0.02998965873836612,-0.0170667110405253,False,6183.38000000002,SHORT,BUY,-3091.69000000001,3091.69000000001,96908.30999999998,103091.69000000002
 WAVES,2026-03-05,0.06927710843373491,-0.0142462195495327,False,14712.17999999999,SHORT,BUY,-7356.089999999995,7356.089999999995,89552.22,110447.78
 WAVES,2026-03-06,-0.04225352112676062,-0.0174122926750628,True,0.0,SHORT,SHORT,4797.450000000012,4797.450000000012,94349.67000000001,115245.23000000001

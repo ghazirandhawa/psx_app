@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SITC,2026-03-04,0.0023791859602446674,-0.0647260087530157,False,483.60000000000355,SHORT,BUY,-241.80000000000177,241.80000000000177,99758.2,100241.8
 SITC,2026-03-05,0.014726149762646079,0.0039299452608656,True,0.0,BUY,BUY,1500.1999999999953,1500.1999999999953,101258.4,101742.0
 SITC,2026-03-06,0.01687668200910486,-0.0020707897907669,False,3489.200000000019,SHORT,BUY,-1744.6000000000095,1744.6000000000095,99513.79999999999,103486.6

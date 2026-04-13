@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GGL,2026-03-04,-0.03916913946587541,0.0089495408916297,False,8605.080000000002,BUY,SHORT,-4302.540000000001,4302.540000000001,95697.45999999999,104302.54000000001
 GGL,2026-03-05,0.07350216182828895,0.0076307274193363,True,0.0,BUY,BUY,7757.609999999985,7757.609999999985,103455.06999999998,112060.15
 GGL,2026-03-06,-0.042002301495972394,-0.0146808285741192,True,0.0,SHORT,SHORT,4758.870000000003,4758.870000000003,108213.93999999999,116819.01999999999

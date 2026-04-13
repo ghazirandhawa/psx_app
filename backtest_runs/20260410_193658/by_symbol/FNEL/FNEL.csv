@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FNEL,2026-03-04,-0.007462686567164201,-0.0275047840044156,True,0.0,SHORT,SHORT,800.0000000000007,800.0000000000007,100800.0,100800.0
 FNEL,2026-03-05,0.015037593984962516,-0.004118685700821,False,3200.0000000000027,SHORT,BUY,-1600.0000000000014,1600.0000000000014,99200.0,102400.0
 FNEL,2026-03-06,-0.029629629629629672,-0.0043941246594119,True,0.0,SHORT,SHORT,3200.0000000000027,3200.0000000000027,102400.0,105600.0

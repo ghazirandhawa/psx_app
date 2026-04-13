@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 NPL,2026-03-04,-0.03974518764714019,-0.014373685,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 NPL,2026-03-05,0.060859532737236766,-0.00043421192,False,6448.159999999998,HOLD,BUY,0.0,6448.159999999998,100000.0,106448.16
 NPL,2026-03-06,-0.06810766721044048,-0.017695079,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,106448.16

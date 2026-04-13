@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PPP,2026-03-04,0.019322205361659295,-0.0084731315879116,False,1877.5300000000107,HOLD,BUY,0.0,1877.5300000000107,100000.0,101877.53000000001
 PPP,2026-03-05,0.02183406113537112,-0.0018926709158148,False,2162.599999999989,HOLD,BUY,0.0,2162.599999999989,100000.0,104040.13
 PPP,2026-03-06,-0.0064102564102563875,-0.0011249092264088,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,104040.13

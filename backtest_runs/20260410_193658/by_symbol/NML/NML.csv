@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 NML,2026-03-04,-0.021656050955414008,-0.016609436,True,0.0,SHORT,SHORT,2536.400000000004,2536.400000000004,102536.40000000001,102536.40000000001
 NML,2026-03-05,0.029427083333333437,0.0014027171,True,0.0,BUY,BUY,3371.920000000008,3371.920000000008,105908.32,105908.32
 NML,2026-03-06,-0.0573614975967619,-0.001399932,True,0.0,SHORT,SHORT,6766.219999999995,6766.219999999995,112674.54000000001,112674.54000000001

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HINOON,2026-03-04,-0.023875771206105734,-0.0093918011470681,True,0.0,SHORT,SHORT,2496.649999999991,2496.649999999991,102496.65,102496.65
 HINOON,2026-03-05,-0.024178102255571376,-0.0064471875388448,True,0.0,SHORT,SHORT,2467.900000000004,2467.900000000004,104964.54999999999,104964.54999999999
 HINOON,2026-03-06,-0.030723225419110545,-0.0070881612086206,True,0.0,SHORT,SHORT,3060.1500000000015,3060.1500000000015,108024.7,108024.7

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CRTM,2026-03-04,0.10004221190375673,0.0606225529299546,True,0.0,BUY,BUY,3898.649999999996,3898.649999999996,103898.65,103898.65
 CRTM,2026-03-05,0.10015349194167311,0.0584550035002104,True,0.0,BUY,BUY,4293.450000000005,4293.450000000005,108192.1,108192.1
 CRTM,2026-03-06,0.10010463899546562,0.0597583641292514,True,0.0,BUY,BUY,4721.149999999996,4721.149999999996,112913.25,112913.25

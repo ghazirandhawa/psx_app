@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 THCCL,2026-03-04,0.02385892116182564,-0.002929690019729,False,4484.9999999999945,SHORT,BUY,-2242.4999999999973,2242.4999999999973,97757.5,102242.5
 THCCL,2026-03-05,0.08328267477203655,0.003593698478498,True,0.0,BUY,BUY,8014.499999999999,8014.499999999999,105772.0,110257.0
 THCCL,2026-03-06,-0.017022072577628222,0.0139710722377904,False,3549.0000000000146,BUY,SHORT,-1774.5000000000073,1774.5000000000073,103997.5,112031.5

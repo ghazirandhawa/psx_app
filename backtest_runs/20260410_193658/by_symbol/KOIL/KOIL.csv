@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KOIL,2026-03-04,0.09998020194020985,0.0022915417682685,True,0.0,BUY,BUY,8514.300000000007,8514.300000000007,108514.3,108514.3
 KOIL,2026-03-05,0.03311735061195087,-0.0004343522559284,False,6204.479999999988,SHORT,BUY,-3102.239999999994,3102.239999999994,105412.06000000001,111616.54000000001
 KOIL,2026-03-06,0.056097560975609806,0.0103181542734762,True,0.0,BUY,BUY,5428.919999999998,5428.919999999998,110840.98000000001,117045.45999999999

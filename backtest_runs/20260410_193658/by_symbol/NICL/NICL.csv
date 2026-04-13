@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 NICL,2026-03-04,0.024917724494593285,0.001929519067201,True,0.0,BUY,BUY,2726.320000000006,2726.320000000006,102726.32,102726.32
 NICL,2026-03-05,-0.03331422018348629,0.0017646869242873,False,7471.660000000003,BUY,SHORT,-3735.8300000000013,3735.8300000000013,98990.49,106462.15000000001
 NICL,2026-03-06,-0.015362714277240674,-0.0007130258909261,True,0.0,SHORT,SHORT,1665.3700000000022,1665.3700000000022,100655.86,108127.52

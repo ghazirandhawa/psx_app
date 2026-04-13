@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HBLTETF,2026-03-04,0.0010909090909090313,0.0007698819938254,True,0.0,BUY,BUY,108.96000000000413,108.96000000000413,100108.96,100108.96
 HBLTETF,2026-03-05,-0.0010897203051217774,0.0007115373256813,False,217.92000000000826,BUY,SHORT,-108.96000000000413,108.96000000000413,100000.0,100217.92000000001
 HBLTETF,2026-03-06,0.0009090909090907484,0.0007320882376935,True,0.0,BUY,BUY,90.79999999999484,90.79999999999484,100090.79999999999,100308.72

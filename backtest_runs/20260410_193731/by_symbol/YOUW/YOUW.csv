@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 YOUW,2026-03-04,0.04632152588555849,4.993713051533093e-05,True,0.0,BUY,BUY,4047.6999999999985,4047.6999999999985,104047.7,104047.7
 YOUW,2026-03-05,0.0390625,-0.0004217972981035,False,3571.5000000000086,HOLD,BUY,0.0,3571.5000000000086,104047.7,107619.20000000001
 YOUW,2026-03-06,0.007518796992481036,-0.0051483698230527,False,714.2999999999847,HOLD,BUY,0.0,714.2999999999847,104047.7,108333.5

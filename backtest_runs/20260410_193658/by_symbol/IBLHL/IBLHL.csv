@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 IBLHL,2026-03-04,0.04088454615582404,0.0114863907182972,True,0.0,BUY,BUY,3703.1099999999915,3703.1099999999915,103703.10999999999,103703.10999999999
 IBLHL,2026-03-05,0.058300395256917215,0.0117973264695103,True,0.0,BUY,BUY,5496.440000000015,5496.440000000015,109199.55,109199.55
 IBLHL,2026-03-06,-0.05555555555555558,0.0140506788054086,False,11086.040000000012,BUY,SHORT,-5543.020000000006,5543.020000000006,103656.53,114742.57

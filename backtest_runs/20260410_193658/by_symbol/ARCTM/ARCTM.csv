@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ARCTM,2026-03-04,0.0,-0.0102277947193323,False,0.0,SHORT,HOLD,-0.0,0.0,100000.0,100000.0
 ARCTM,2026-03-05,0.04444444444444451,0.0025954302347649,True,0.0,BUY,BUY,4305.599999999998,4305.599999999998,104305.59999999999,104305.59999999999
 ARCTM,2026-03-06,0.08049645390070914,0.0123269567262689,True,0.0,BUY,BUY,8144.759999999998,8144.759999999998,112450.36,112450.36

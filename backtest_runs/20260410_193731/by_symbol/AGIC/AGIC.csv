@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AGIC,2026-03-04,0.007703703703703546,-0.0407626348597078,False,752.9599999999942,HOLD,BUY,0.0,752.9599999999942,100000.0,100752.95999999999
 AGIC,2026-03-05,0.034401646574536926,0.0038431520890869,True,0.0,BUY,BUY,3388.320000000005,3388.320000000005,103388.32,104141.28
 AGIC,2026-03-06,-0.05486071631608869,-0.0028111000023456,True,0.0,HOLD,HOLD,-0.0,-0.0,103388.32,104141.28

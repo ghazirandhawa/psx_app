@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 BTL,2026-03-04,0.04416167664670656,-0.0176342211730905,False,3864.5,SHORT,BUY,-1932.25,1932.25,98067.75,101932.25
 BTL,2026-03-05,-0.02236559139784955,-0.0104391527180263,True,0.0,SHORT,SHORT,1021.8000000000015,1021.8000000000015,99089.55,102954.05
 BTL,2026-03-06,-0.0488634697169672,-0.0027855736781974,True,0.0,SHORT,SHORT,2182.459999999996,2182.459999999996,101272.01,105136.51

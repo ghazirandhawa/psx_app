@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PASL,2026-03-04,0.05392156862745101,0.018373877873732,True,0.0,BUY,BUY,5164.279999999994,5164.279999999994,105164.28,105164.28
 PASL,2026-03-05,0.07441860465116279,0.0121380005214107,True,0.0,BUY,BUY,7511.680000000007,7511.680000000007,112675.96,112675.96
 PASL,2026-03-06,-0.03463203463203468,0.0194376293253592,False,7511.680000000007,BUY,SHORT,-3755.8400000000033,3755.8400000000033,108920.12,116431.8

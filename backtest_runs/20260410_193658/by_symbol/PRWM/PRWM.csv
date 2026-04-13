@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PRWM,2026-03-13,0.010461245839277211,-0.0029916046122025,False,2172.719999999989,SHORT,BUY,-1086.3599999999944,1086.3599999999944,98913.64,101086.36
 PRWM,2026-03-16,0.0,-0.0048130357690364,False,0.0,SHORT,HOLD,-0.0,0.0,98913.64,101086.36
 PRWM,2026-03-18,0.0,-0.0017506721587786,False,0.0,SHORT,HOLD,-0.0,0.0,98913.64,101086.36

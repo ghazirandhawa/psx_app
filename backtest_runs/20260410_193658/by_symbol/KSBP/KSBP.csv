@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KSBP,2026-03-04,0.040187256809338656,-0.0021565638893055,False,6543.900000000013,SHORT,BUY,-3271.9500000000066,3271.9500000000066,96728.04999999999,103271.95000000001
 KSBP,2026-03-05,0.10000584487696518,-0.0022519502699514,False,16938.899999999987,SHORT,BUY,-8469.449999999993,8469.449999999993,88258.6,111741.4
 KSBP,2026-03-06,0.024123273113708876,-0.0029460522711559,False,4494.60000000002,SHORT,BUY,-2247.30000000001,2247.30000000001,86011.29999999999,113988.70000000001

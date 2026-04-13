@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SFL,2026-03-04,0.0,0.0135295302111352,False,0.0,BUY,HOLD,0.0,0.0,100000.0,100000.0
 SFL,2026-03-05,0.011876190476190596,0.0093569350232536,True,0.0,BUY,BUY,1134.7700000000025,1134.7700000000025,101134.77,101134.77
 SFL,2026-03-06,0.007887281523242917,0.0166901161134502,True,0.0,BUY,BUY,762.5799999999892,762.5799999999892,101897.34999999999,101897.34999999999

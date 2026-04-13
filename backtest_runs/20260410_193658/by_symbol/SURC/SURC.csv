@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SURC,2026-03-04,-0.004424778761061954,0.0034765965364633,False,797.2799999999959,BUY,SHORT,-398.63999999999794,398.63999999999794,99601.36,100398.64
 SURC,2026-03-05,-0.02383838383838388,0.0041432638132787,False,4276.319999999999,BUY,SHORT,-2138.1599999999994,2138.1599999999994,97463.2,102536.8
 SURC,2026-03-06,0.04356374172185418,0.0054639828188478,True,0.0,BUY,BUY,3814.2599999999943,3814.2599999999943,101277.45999999999,106351.06

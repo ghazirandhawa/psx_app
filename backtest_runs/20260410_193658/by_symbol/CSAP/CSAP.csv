@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CSAP,2026-03-04,-0.008940545373267716,-0.016671978,True,0.0,SHORT,SHORT,959.9999999999966,959.9999999999966,100960.0,100960.0
 CSAP,2026-03-05,0.03191249436175014,0.004910522,True,0.0,BUY,BUY,3395.999999999998,3395.999999999998,104356.0,104356.0
 CSAP,2026-03-06,-0.03507813353731837,0.013111943,False,7704.000000000019,BUY,SHORT,-3852.0000000000095,3852.0000000000095,100503.99999999999,108208.0

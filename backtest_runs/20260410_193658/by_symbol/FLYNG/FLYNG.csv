@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FLYNG,2026-03-04,-0.035045317220543826,-0.0100339651422031,True,0.0,SHORT,SHORT,4278.660000000005,4278.660000000005,104278.66,104278.66
 FLYNG,2026-03-05,-0.01899394698392809,-0.0016657979944973,True,0.0,SHORT,SHORT,2237.6899999999914,2237.6899999999914,106516.34999999999,106516.34999999999
 FLYNG,2026-03-06,0.0072340425531916,-0.0048614164361206,False,1672.1200000000167,SHORT,BUY,-836.0600000000084,836.0600000000084,105680.29,107352.41

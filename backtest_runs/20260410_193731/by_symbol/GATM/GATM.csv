@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GATM,2026-03-04,-0.04168837936425229,0.003280984786749,False,4252.800000000004,BUY,HOLD,-4252.800000000004,-0.0,95747.2,100000.0
 GATM,2026-03-05,0.032082653616095635,0.0039395521399368,True,0.0,BUY,BUY,3136.439999999999,3136.439999999999,98883.64,103136.44
 GATM,2026-03-06,0.0010537407797681642,0.0035234201657411,True,0.0,BUY,BUY,106.31999999999773,106.31999999999773,98989.95999999999,103242.76

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ACPL,2026-03-04,0.007902621722846392,-0.0001606580735283,False,791.2500000000051,HOLD,BUY,0.0,791.2500000000051,100000.0,100791.25
 ACPL,2026-03-05,0.010924900598268339,0.000434885049041,True,0.0,BUY,BUY,1102.499999999999,1102.499999999999,101102.5,101893.75
 ACPL,2026-03-06,-0.01198309134350295,0.0009779686002341,False,1222.4999999999966,BUY,HOLD,-1222.4999999999966,-0.0,99880.0,101893.75

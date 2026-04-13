@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TELE,2026-03-04,0.012012012012011963,-0.0192518520008895,False,2222.240000000002,SHORT,BUY,-1111.120000000001,1111.120000000001,98888.88,101111.12
 TELE,2026-03-05,0.1023738872403559,-0.0198476735369799,False,19166.819999999985,SHORT,BUY,-9583.409999999993,9583.409999999993,89305.47,110694.53
 TELE,2026-03-06,-0.03499327052489898,-0.0228096058330658,True,0.0,SHORT,SHORT,3611.139999999997,3611.139999999997,92916.61,114305.66999999998

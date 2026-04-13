@@ -65,14 +65,14 @@ def arrow_safe_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 def style_backtest_detail_preview(df: pd.DataFrame) -> pd.DataFrame | pd.io.formats.style.Styler:
     """
     Row shading matching the downloaded .xlsx: green when ``suggestion_pred`` equals
-    ``suggestion_oracle``, else red. Falls back to a plain frame if columns are missing.
+    ``suggestion_actual``, else red. Falls back to a plain frame if columns are missing.
     """
-    need = {"suggestion_pred", "suggestion_oracle"}
+    need = {"suggestion_pred", "suggestion_actual"}
     if not need.issubset(df.columns):
         return df
     match = (
         df["suggestion_pred"].astype(str).str.strip()
-        == df["suggestion_oracle"].astype(str).str.strip()
+        == df["suggestion_actual"].astype(str).str.strip()
     )
 
     def row_colors(row: pd.Series) -> list[str]:
@@ -232,9 +232,9 @@ def _float_cell(x: object) -> float | None:
 def _equity_from_summary_row(row: pd.Series) -> tuple[float | None, float | None, float | None, float | None]:
     """Final equities ($) and total return on initial equity as **percentage** (e.g. 12.5 not 0.125)."""
     fp = _float_cell(row.get("final_equity_predicted"))
-    fo = _float_cell(row.get("final_equity_oracle"))
+    fo = _float_cell(row.get("final_equity_actual"))
     trp = _float_cell(row.get("total_return_predicted"))
-    tro = _float_cell(row.get("total_return_oracle"))
+    tro = _float_cell(row.get("total_return_actual"))
     if trp is not None:
         trp *= 100.0
     if tro is not None:
@@ -243,11 +243,11 @@ def _equity_from_summary_row(row: pd.Series) -> tuple[float | None, float | None
 
 
 def _equity_from_detail_csv(df: pd.DataFrame) -> tuple[float | None, float | None, float | None, float | None]:
-    """Last-day equity and total return % from ``equity_predicted`` / ``equity_oracle`` columns."""
-    if "equity_predicted" not in df.columns or "equity_oracle" not in df.columns:
+    """Last-day equity and total return % from ``equity_predicted`` / ``equity_actual`` columns."""
+    if "equity_predicted" not in df.columns or "equity_actual" not in df.columns:
         return None, None, None, None
     ep = pd.to_numeric(df["equity_predicted"], errors="coerce")
-    eo = pd.to_numeric(df["equity_oracle"], errors="coerce")
+    eo = pd.to_numeric(df["equity_actual"], errors="coerce")
     if ep.empty or eo.empty or pd.isna(ep.iloc[0]) or pd.isna(eo.iloc[0]):
         return None, None, None, None
     ini = float(ep.iloc[0])
@@ -309,9 +309,9 @@ def build_leaderboard(run_name: str, runs_root_str: str, loc_key: str, sym_filte
             "Days total": int(t),
             "Accuracy %": pct,
             "Equity pred ($)": round(fp, 2) if fp is not None else math.nan,
-            "Equity oracle ($)": round(fo, 2) if fo is not None else math.nan,
+            "Equity actual ($)": round(fo, 2) if fo is not None else math.nan,
             "Return pred (%)": round(trp, 2) if trp is not None else math.nan,
-            "Return oracle (%)": round(tro, 2) if tro is not None else math.nan,
+            "Return actual (%)": round(tro, 2) if tro is not None else math.nan,
         }
         rows.append(row_out)
     out = pd.DataFrame(rows)
@@ -406,7 +406,7 @@ def main() -> None:
                 st.caption(
                     "Sorted by days correct, then accuracy %. "
                     "Equity and return % match the run ``summary.csv`` when available (else last row of each detail CSV); "
-                    "same total-return definition as the equity chart (predicted vs oracle paths)."
+                    "same total-return definition as the equity chart (predicted vs actual paths)."
                 )
                 st.dataframe(arrow_safe_dataframe(lb), width="stretch", hide_index=True)
             if i < len(run_paths) - 1:
@@ -479,7 +479,7 @@ def main() -> None:
                 )
                 st.caption(
                     "Row colors match the downloaded .xlsx: green when `suggestion_pred` equals "
-                    "`suggestion_oracle`, red otherwise (Excel theme: light green / light red fills)."
+                    "`suggestion_actual`, red otherwise (Excel theme: light green / light red fills)."
                 )
                 try:
                     dfb = pd.read_excel(xlsx_bt, engine="openpyxl")

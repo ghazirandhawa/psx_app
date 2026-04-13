@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ESBL,2026-03-04,-0.10017172295363475,0.0510691119486029,False,27625.49999999997,BUY,SHORT,-13812.749999999985,13812.749999999985,86187.25000000001,113812.74999999999
 ESBL,2026-03-05,0.09414758269720092,0.0606031034854176,True,0.0,BUY,BUY,11681.639999999989,11681.639999999989,97868.89,125494.38999999997
 ESBL,2026-03-06,0.018023255813953698,0.0628706790392737,True,0.0,BUY,BUY,2446.830000000018,2446.830000000018,100315.72000000002,127941.22

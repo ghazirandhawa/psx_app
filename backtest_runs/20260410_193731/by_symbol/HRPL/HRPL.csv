@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HRPL,2026-03-04,0.016216216216216273,0.013397448106157,True,0.0,BUY,BUY,1664.700000000004,1664.700000000004,101664.7,101664.7
 HRPL,2026-03-05,0.030851063829787195,0.0118176141214716,True,0.0,BUY,BUY,3218.4199999999905,3218.4199999999905,104883.12,104883.12
 HRPL,2026-03-06,-0.06346749226006199,0.0160323742741348,False,6825.270000000002,BUY,HOLD,-6825.270000000002,-0.0,98057.84999999999,104883.12

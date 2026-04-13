@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ALAC,2026-03-04,0.026871401151631336,-0.0871926952906567,False,4852.959999999989,SHORT,BUY,-2426.4799999999946,2426.4799999999946,97573.52,102426.48
 ALAC,2026-03-05,0.06822429906542071,-0.0029838514256839,False,12652.360000000008,SHORT,BUY,-6326.180000000004,6326.180000000004,91247.34,108752.66
 ALAC,2026-03-06,-0.03149606299212593,0.0163882990411438,False,6239.51999999999,BUY,SHORT,-3119.759999999995,3119.759999999995,88127.58,111872.42

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CEPB,2026-03-04,0.07445632141540726,0.0033673708535543,True,0.0,BUY,BUY,7334.619999999998,7334.619999999998,107334.62,107334.62
 CEPB,2026-03-05,0.0672384219554032,0.0065816054423636,True,0.0,BUY,BUY,7116.760000000003,7116.760000000003,114451.38,114451.38
 CEPB,2026-03-06,-0.019607843137254832,0.0073769438856384,False,4429.819999999996,BUY,SHORT,-2214.909999999998,2214.909999999998,112236.47,116666.29000000001

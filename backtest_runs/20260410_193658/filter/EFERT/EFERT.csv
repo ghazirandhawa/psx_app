@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 EFERT,2026-03-04,0.03850293542074357,-0.02693126,False,7838.520000000004,SHORT,BUY,-3919.260000000002,3919.260000000002,96080.73999999999,103919.26000000001
 EFERT,2026-03-05,0.01667687379281091,-0.0022280496,False,3525.839999999992,SHORT,BUY,-1762.919999999996,1762.919999999996,94317.82,105682.18
 EFERT,2026-03-06,-0.019507900468004324,-0.005690255,True,0.0,SHORT,SHORT,2096.580000000004,2096.580000000004,96414.40000000001,107778.76000000001

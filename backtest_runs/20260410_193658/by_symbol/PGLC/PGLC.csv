@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PGLC,2026-03-04,0.005397070161911932,-0.020997874,False,1115.5199999999763,SHORT,BUY,-557.7599999999882,557.7599999999882,99442.24,100557.76
 PGLC,2026-03-05,0.03757668711656437,0.016667712,True,0.0,BUY,BUY,3904.3200000000015,3904.3200000000015,103346.56000000001,104462.07999999999
 PGLC,2026-03-06,-0.09090909090909083,0.01675146,False,19601.279999999977,BUY,SHORT,-9800.639999999989,9800.639999999989,93545.92000000003,114262.71999999997

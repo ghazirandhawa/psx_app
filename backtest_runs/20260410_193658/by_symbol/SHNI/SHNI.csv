@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SHNI,2026-03-04,-0.06007509386733423,0.0122088094672699,False,10810.56000000001,BUY,SHORT,-5405.280000000005,5405.280000000005,94594.72,105405.28
 SHNI,2026-03-05,0.09853528628495334,0.0150388439694567,True,0.0,BUY,BUY,8333.140000000003,8333.140000000003,102927.86,113738.42000000001
 SHNI,2026-03-06,-0.05696969696969689,0.0114285882023045,False,10585.339999999995,BUY,SHORT,-5292.669999999997,5292.669999999997,97635.19,119031.09000000001

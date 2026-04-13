@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ASTL,2026-03-04,-0.03281733746130022,-0.0104456570899233,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 ASTL,2026-03-05,0.02496798975672232,0.0074439041323785,True,0.0,BUY,BUY,2748.3300000000163,2748.3300000000163,102748.33000000002,102748.33000000002
 ASTL,2026-03-06,-0.03935040599625239,0.004885135960033,False,4439.610000000005,BUY,HOLD,-4439.610000000005,-0.0,98308.72000000002,102748.33000000002

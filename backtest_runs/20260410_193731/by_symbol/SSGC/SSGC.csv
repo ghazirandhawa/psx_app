@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SSGC,2026-03-04,0.06289926289926284,-0.035341436302213,False,5651.199999999989,HOLD,BUY,0.0,5651.199999999989,100000.0,105651.19999999998
 SSGC,2026-03-05,0.09986130374479885,-0.0364348117723181,False,9536.400000000001,HOLD,BUY,0.0,9536.400000000001,100000.0,115187.59999999999
 SSGC,2026-03-06,0.018495166036149646,-0.0359952995587045,False,1942.6000000000056,HOLD,BUY,0.0,1942.6000000000056,100000.0,117130.2

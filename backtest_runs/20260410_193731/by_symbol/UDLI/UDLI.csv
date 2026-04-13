@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 UDLI,2026-03-04,-0.0032637075718016106,-0.0662382632497172,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 UDLI,2026-03-05,0.003929273084479323,-0.0616714852988137,False,353.76000000000295,HOLD,BUY,0.0,353.76000000000295,100000.0,100353.76000000001
 UDLI,2026-03-06,0.07697325505544694,-0.0576911371784939,False,6957.280000000009,HOLD,BUY,0.0,6957.280000000009,100000.0,107311.04000000001

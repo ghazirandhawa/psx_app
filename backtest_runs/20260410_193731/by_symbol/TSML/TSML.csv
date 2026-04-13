@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TSML,2026-03-04,0.0,0.0588098946424817,False,0.0,BUY,HOLD,0.0,0.0,100000.0,100000.0
 TSML,2026-03-05,-0.003139952153110026,0.0603599920756227,False,304.9199999999978,BUY,HOLD,-304.9199999999978,-0.0,99695.08,100000.0
 TSML,2026-03-06,0.09324533773311328,0.0752189937061451,True,0.0,BUY,BUY,9026.600000000002,9026.600000000002,108721.68000000001,109026.6

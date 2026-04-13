@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 CNERGY,2026-03-04,0.012638230647709303,0.01122633,True,0.0,BUY,BUY,1162.800000000001,1162.800000000001,101162.8,101162.8
 CNERGY,2026-03-05,0.08892355694227772,0.0067041726,True,0.0,BUY,BUY,8284.950000000004,8284.950000000004,109447.75,109447.75
 CNERGY,2026-03-06,-0.04011461318051579,-0.0031197276,True,0.0,SHORT,SHORT,4069.800000000004,4069.800000000004,113517.55000000002,113517.55000000002

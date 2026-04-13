@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 BML,2026-03-04,-0.025692617241912963,-0.0173686297804343,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 BML,2026-03-05,0.022557585385226453,0.0015021158807906,True,0.0,BUY,BUY,2350.1000000000026,2350.1000000000026,102350.1,102350.1
 BML,2026-03-06,-0.03526487494174313,-0.0037768732400098,True,0.0,HOLD,HOLD,-0.0,-0.0,102350.1,102350.1

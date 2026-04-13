@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GHGL,2026-03-04,-0.024163568773234223,0.0167470397088419,False,5090.280000000007,BUY,SHORT,-2545.1400000000035,2545.1400000000035,97454.86,102545.14
 GHGL,2026-03-05,0.015555555555555545,0.0171074610982425,True,0.0,BUY,BUY,1598.869999999995,1598.869999999995,99053.73,104144.01
 GHGL,2026-03-06,-0.035010940919037115,0.0181645723615567,False,7309.1199999999835,BUY,SHORT,-3654.5599999999918,3654.5599999999918,95399.17,107798.56999999999

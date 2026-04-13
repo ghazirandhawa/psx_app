@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PNSC,2026-03-04,-0.04162316279816891,-0.02495117783162,True,0.0,SHORT,SHORT,4684.980000000004,4684.980000000004,104684.98000000001,104684.98000000001
 PNSC,2026-03-05,0.03184513209444595,-0.0039663675000002,False,6870.399999999995,SHORT,BUY,-3435.1999999999975,3435.1999999999975,101249.78000000001,108120.18000000001
 PNSC,2026-03-06,-0.04150169539704773,0.0010389685633281,False,9238.88,BUY,SHORT,-4619.44,4619.44,96630.34000000001,112739.62

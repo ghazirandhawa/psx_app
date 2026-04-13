@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SARC,2026-03-04,-0.0125925925925926,-0.0417636203583335,True,0.0,SHORT,SHORT,1062.1599999999996,1062.1599999999996,101062.16,101062.16
 SARC,2026-03-05,0.01181545386346583,-0.0459053715159158,False,1968.120000000008,SHORT,BUY,-984.060000000004,984.060000000004,100078.09999999999,102046.22
 SARC,2026-03-06,-0.03855421686746996,-0.0426716506650062,True,0.0,SHORT,SHORT,3248.960000000008,3248.960000000008,103327.06,105295.18000000001

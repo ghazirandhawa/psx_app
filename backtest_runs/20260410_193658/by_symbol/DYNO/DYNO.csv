@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DYNO,2026-03-04,0.005071030390217501,-0.019184524161321,False,1074.4199999999757,SHORT,BUY,-537.2099999999879,537.2099999999879,99462.79000000001,100537.20999999999
 DYNO,2026-03-05,0.05396121090674888,0.00196959160791,True,0.0,BUY,BUY,5745.480000000016,5745.480000000016,105208.27000000003,106282.69
 DYNO,2026-03-06,-0.026719630610443468,0.0031244740145832,False,5996.940000000003,BUY,SHORT,-2998.4700000000016,2998.4700000000016,102209.80000000003,109281.16

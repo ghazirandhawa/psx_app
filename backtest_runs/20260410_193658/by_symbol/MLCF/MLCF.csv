@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MLCF,2026-03-04,-0.005677785663591228,-0.020715423,True,0.0,SHORT,SHORT,585.6000000000049,585.6000000000049,100585.6,100585.6
 MLCF,2026-03-05,0.026290744706162217,-0.008725051,False,5392.399999999985,SHORT,BUY,-2696.1999999999925,2696.1999999999925,97889.40000000001,103281.8
 MLCF,2026-03-06,-0.023298945172133934,-0.0047228225,True,0.0,SHORT,SHORT,2452.199999999989,2452.199999999989,100341.6,105733.99999999999

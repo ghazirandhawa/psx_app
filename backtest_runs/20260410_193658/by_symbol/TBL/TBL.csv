@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TBL,2026-03-04,-0.0011614401858304202,-0.0051477439654871,True,0.0,SHORT,SHORT,112.2299999999976,112.2299999999976,100112.23,100112.23
 TBL,2026-03-05,0.07441860465116279,-0.0051819178813899,False,14365.440000000013,SHORT,BUY,-7182.720000000007,7182.720000000007,92929.51,107294.95000000001
 TBL,2026-03-06,-0.025974025974025983,-0.0074279356587125,True,0.0,SHORT,SHORT,2693.5200000000023,2693.5200000000023,95623.03,109988.47

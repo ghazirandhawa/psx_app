@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SMCPL,2026-03-04,-0.009264024704065843,0.0094324754387236,False,1935.359999999997,BUY,SHORT,-967.6799999999985,967.6799999999985,99032.32,100967.68
 SMCPL,2026-03-05,0.06727272727272737,0.0077577450631206,True,0.0,BUY,BUY,6961.920000000009,6961.920000000009,105994.24,107929.6
 SMCPL,2026-03-06,-0.06108542224385505,0.0117157422029234,False,13493.760000000028,BUY,SHORT,-6746.880000000014,6746.880000000014,99247.36,114676.48000000003

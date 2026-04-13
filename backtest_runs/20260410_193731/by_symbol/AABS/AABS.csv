@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AABS,2026-03-04,0.002383445080524682,-0.07777179,False,248.23999999999842,HOLD,BUY,0.0,248.23999999999842,100000.0,100248.24
 AABS,2026-03-05,-0.002177777777777834,0.03667574,False,227.36000000000422,BUY,HOLD,-227.36000000000422,-0.0,99772.64,100248.24
 AABS,2026-03-06,0.00043427909669957465,-0.010498091,False,45.23999999999842,HOLD,BUY,0.0,45.23999999999842,99772.64,100293.48

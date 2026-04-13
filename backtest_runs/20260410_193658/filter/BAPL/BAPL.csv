@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 BAPL,2026-03-04,-0.02744209466263836,0.0171027998310393,False,5635.299999999981,BUY,SHORT,-2817.6499999999905,2817.6499999999905,97182.35,102817.65
 BAPL,2026-03-05,0.001553196997152284,0.0278198533823836,True,0.0,BUY,BUY,155.09999999998752,155.09999999998752,97337.45,102972.74999999997
 BAPL,2026-03-06,-0.04368053760661661,0.0311551788993756,False,8737.299999999988,BUY,SHORT,-4368.649999999994,4368.649999999994,92968.8,107341.39999999997

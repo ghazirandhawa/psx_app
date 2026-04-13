@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 UBLPETF,2026-03-04,-0.012892828364222342,-0.0173542677894176,True,0.0,SHORT,SHORT,1345.4399999999912,1345.4399999999912,101345.43999999999,101345.43999999999
 UBLPETF,2026-03-05,0.0323809523809524,-0.0187927154555552,False,6671.139999999988,SHORT,BUY,-3335.569999999994,3335.569999999994,98009.87,104681.00999999998
 UBLPETF,2026-03-06,-0.029520295202951963,-0.0119680602681131,True,0.0,SHORT,SHORT,3139.359999999993,3139.359999999993,101149.23,107820.36999999998

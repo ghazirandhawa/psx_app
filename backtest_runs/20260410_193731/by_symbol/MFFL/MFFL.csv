@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MFFL,2026-03-04,0.00450972812781858,-0.00038685062,False,452.89999999999264,HOLD,BUY,0.0,452.89999999999264,100000.0,100452.9
 MFFL,2026-03-05,0.0034633145202669358,-0.010653493,False,349.38000000001324,HOLD,BUY,0.0,349.38000000001324,100000.0,100802.28
 MFFL,2026-03-06,-0.0092675444202992,-0.002944543,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100802.28

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AIRLINK,2026-03-04,-0.02486910994764402,0.039576214,False,5833.380000000014,BUY,SHORT,-2916.690000000007,2916.690000000007,97083.31,102916.69
 AIRLINK,2026-03-05,0.01649089165867701,8.3057246e-05,True,0.0,BUY,BUY,1885.980000000009,1885.980000000009,98969.29000000001,104802.67000000001
 AIRLINK,2026-03-06,-0.04099855373200034,0.00062640023,False,9532.240000000014,BUY,SHORT,-4766.120000000007,4766.120000000007,94203.17,109568.79000000002

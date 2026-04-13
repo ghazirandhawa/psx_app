@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GRR,2026-03-04,-0.0020283975659228792,-0.0084730302729229,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 GRR,2026-03-05,0.00203252032520318,-0.0026968171519599,False,202.0399999999957,HOLD,BUY,0.0,202.0399999999957,100000.0,100202.04
 GRR,2026-03-06,-0.009127789046653123,-0.0082326197004211,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100202.04

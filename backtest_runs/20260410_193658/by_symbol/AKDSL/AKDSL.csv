@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AKDSL,2026-03-04,0.0005711022272985034,0.0116788241333431,True,0.0,BUY,BUY,67.27999999998661,67.27999999998661,100067.27999999998,100067.27999999998
 AKDSL,2026-03-05,0.040525114155251174,0.0152765453206789,True,0.0,BUY,BUY,4776.880000000006,4776.880000000006,104844.15999999999,104844.15999999999
 AKDSL,2026-03-06,-0.04223806911684036,0.0122374317146293,False,10361.119999999994,BUY,SHORT,-5180.559999999997,5180.559999999997,99663.59999999999,110024.71999999999

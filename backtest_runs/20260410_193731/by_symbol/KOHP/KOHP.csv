@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KOHP,2026-03-04,0.0,-0.0269745468652932,True,0.0,HOLD,HOLD,0.0,0.0,100000.0,100000.0
 KOHP,2026-03-05,0.02055733211512112,-0.031515863395138,False,1956.599999999997,HOLD,BUY,0.0,1956.599999999997,100000.0,101956.59999999999
 KOHP,2026-03-06,0.02820053715308868,-0.034283878340194,False,2739.2399999999957,HOLD,BUY,0.0,2739.2399999999957,100000.0,104695.84

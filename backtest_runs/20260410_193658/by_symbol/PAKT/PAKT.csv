@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PAKT,2026-03-04,-0.02388943104911978,0.0066708563655633,False,4697.16000000002,BUY,SHORT,-2348.58000000001,2348.58000000001,97651.41999999998,102348.58000000002
 PAKT,2026-03-05,0.032976233052638415,-0.0020706656374941,False,6328.91999999999,SHORT,BUY,-3164.459999999995,3164.459999999995,94486.95999999999,105513.04000000001
 PAKT,2026-03-06,-0.01563520478419944,-0.0003628959374667,True,0.0,SHORT,SHORT,1549.8599999999915,1549.8599999999915,96036.81999999999,107062.9

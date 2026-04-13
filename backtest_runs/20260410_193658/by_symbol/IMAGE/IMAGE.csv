@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 IMAGE,2026-03-04,-0.0056285178236398226,-0.009473691,True,0.0,SHORT,SHORT,571.2000000000047,571.2000000000047,100571.20000000001,100571.20000000001
 IMAGE,2026-03-05,0.04433962264150959,-0.0019594454,False,8948.800000000012,SHORT,BUY,-4474.400000000006,4474.400000000006,96096.8,105045.6
 IMAGE,2026-03-06,-0.02619692863595313,-0.0027319677,True,0.0,SHORT,SHORT,2760.800000000009,2760.800000000009,98857.6,107806.40000000002

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TRSM,2026-03-04,0.02264600715137055,-0.0724379436026243,False,1215.6199999999967,HOLD,BUY,0.0,1215.6199999999967,100000.0,101215.62
 TRSM,2026-03-05,0.010489510489510412,-0.0950471799477145,False,575.8199999999991,HOLD,BUY,0.0,575.8199999999991,100000.0,101791.44
 TRSM,2026-03-06,0.04728950403690879,-0.0812303304165805,False,2623.1800000000007,HOLD,BUY,0.0,2623.1800000000007,100000.0,104414.62

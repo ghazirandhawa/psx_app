@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SYM,2026-03-04,0.03501544799176104,-0.0188138644917862,False,3427.5399999999986,HOLD,BUY,0.0,3427.5399999999986,100000.0,103427.54
 SYM,2026-03-05,0.05074626865671639,0.0032091909605342,True,0.0,BUY,BUY,5141.309999999998,5141.309999999998,105141.31,108568.84999999999
 SYM,2026-03-06,-0.05208333333333337,0.0139920134763105,False,5544.5500000000075,BUY,HOLD,-5544.5500000000075,-0.0,99596.76,108568.84999999999

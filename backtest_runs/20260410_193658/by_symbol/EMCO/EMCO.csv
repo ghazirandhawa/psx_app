@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 EMCO,2026-03-04,-0.05924497106640947,-0.0642830047838536,True,0.0,SHORT,SHORT,5650.199999999996,5650.199999999996,105650.2,105650.2
 EMCO,2026-03-05,0.09988283538371401,-0.0688041963747186,False,17922.95999999998,SHORT,BUY,-8961.47999999999,8961.47999999999,96688.72,114611.68
 EMCO,2026-03-06,0.023435419440745786,-0.0633277838348744,False,4625.280000000013,SHORT,BUY,-2312.6400000000067,2312.6400000000067,94376.08,116924.31999999999

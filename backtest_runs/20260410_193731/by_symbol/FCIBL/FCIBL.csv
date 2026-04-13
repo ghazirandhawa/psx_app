@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FCIBL,2026-03-04,-0.10008703220191473,0.0517598840823113,False,10117.700000000003,BUY,HOLD,-10117.700000000003,-0.0,89882.3,100000.0
 FCIBL,2026-03-05,-0.0831721470019342,0.04491566025206,False,7566.279999999995,BUY,HOLD,-7566.279999999995,-0.0,82316.02,100000.0
 FCIBL,2026-03-06,0.0,0.0520125320253293,False,0.0,BUY,HOLD,0.0,0.0,82316.02,100000.0

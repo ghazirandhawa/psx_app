@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AHL,2026-03-04,0.01736465781409602,-0.0015179048590549,False,3586.3200000000024,SHORT,BUY,-1793.1600000000012,1793.1600000000012,98206.84,101793.16
 AHL,2026-03-05,0.031682284694332985,-0.0044990798885385,False,6656.960000000008,SHORT,BUY,-3328.480000000004,3328.480000000004,94878.36,105121.64
 AHL,2026-03-06,-0.024653979238754342,-0.0017100231943681,True,0.0,SHORT,SHORT,2672.160000000001,2672.160000000001,97550.51999999999,107793.8

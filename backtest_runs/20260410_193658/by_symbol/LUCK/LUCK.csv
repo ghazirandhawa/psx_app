@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 LUCK,2026-03-04,-0.019947308995107216,-0.010735799,True,0.0,SHORT,SHORT,2241.899999999997,2241.899999999997,102241.9,102241.9
 LUCK,2026-03-05,0.021070148489503282,0.005569085,True,0.0,BUY,BUY,2320.859999999989,2320.859999999989,104562.75999999998,104562.75999999998
 LUCK,2026-03-06,-0.03959080309906471,-0.008236559,True,0.0,SHORT,SHORT,4452.77999999999,4452.77999999999,109015.53999999998,109015.53999999998

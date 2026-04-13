@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MRNS,2026-03-04,0.002246414377051975,-0.0048611567411361,False,224.9000000000044,HOLD,BUY,0.0,224.9000000000044,100000.0,100224.90000000001
 MRNS,2026-03-05,0.030689655172413843,-0.0038316560429199,False,3079.400000000002,HOLD,BUY,0.0,3079.400000000002,100000.0,103304.3
 MRNS,2026-03-06,-0.027601204416192737,0.0010825835239117,False,2854.4999999999977,BUY,HOLD,-2854.4999999999977,-0.0,97145.5,103304.3

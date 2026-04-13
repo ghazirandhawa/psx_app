@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SAZEW,2026-03-04,0.011669488093902336,0.0255301885570983,True,0.0,BUY,BUY,1315.600000000004,1315.600000000004,101315.6,101315.6
 SAZEW,2026-03-05,0.039885036962738374,0.0269764364162612,True,0.0,BUY,BUY,4549.050000000002,4549.050000000002,105864.65000000001,105864.65000000001
 SAZEW,2026-03-06,-0.011236215579525366,0.0279629295606637,False,2665.300000000002,BUY,SHORT,-1332.650000000001,1332.650000000001,104532.0,107197.3

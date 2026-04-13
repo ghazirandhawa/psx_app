@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DCR,2026-03-04,0.025898078529657642,0.0150587983263613,True,0.0,BUY,BUY,2587.260000000019,2587.260000000019,102587.26000000002,102587.26000000002
 DCR,2026-03-05,0.0073289902280129215,0.015460649147697,True,0.0,BUY,BUY,751.139999999989,751.139999999989,103338.40000000001,103338.40000000001
 DCR,2026-03-06,-0.01077876583131232,0.0175967881116439,False,1112.799999999996,BUY,HOLD,-1112.799999999996,-0.0,102225.6,103338.40000000001

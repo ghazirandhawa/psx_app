@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ALIFE,2026-03-04,-0.013941330235259897,0.044156633,False,2876.159999999981,BUY,SHORT,-1438.0799999999906,1438.0799999999906,98561.92000000001,101438.07999999999
 ALIFE,2026-03-05,-0.02533136966126659,-0.017351853,True,0.0,SHORT,SHORT,2576.559999999998,2576.559999999998,101138.48000000001,104014.63999999998
 ALIFE,2026-03-06,0.0,0.027302394,False,0.0,BUY,HOLD,0.0,0.0,101138.48000000001,104014.63999999998

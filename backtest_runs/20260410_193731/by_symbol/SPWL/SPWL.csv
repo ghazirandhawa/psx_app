@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SPWL,2026-03-04,-0.019122609673790758,0.0014687162372859,False,1855.8899999999992,BUY,HOLD,-1855.8899999999992,-0.0,98144.11,100000.0
 SPWL,2026-03-05,0.025229357798165042,0.0002412714979705,True,0.0,BUY,BUY,2401.7399999999875,2401.7399999999875,100545.84999999999,102401.73999999999
 SPWL,2026-03-06,0.016778523489932917,0.0027449934640352,True,0.0,BUY,BUY,1637.5500000000038,1637.5500000000038,102183.4,104039.29

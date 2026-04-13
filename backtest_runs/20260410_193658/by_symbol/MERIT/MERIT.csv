@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MERIT,2026-03-04,-0.10532150776053206,-0.0357831745606851,True,0.0,SHORT,SHORT,12179.949999999992,12179.949999999992,112179.95,112179.95
 MERIT,2026-03-05,0.045848822800495626,-0.0010814186818994,False,9487.53999999998,SHORT,BUY,-4743.76999999999,4743.76999999999,107436.18000000001,116923.71999999999
 MERIT,2026-03-06,-0.04028436018957349,-0.0047122396201224,True,0.0,SHORT,SHORT,4359.1399999999985,4359.1399999999985,111795.32,121282.85999999999

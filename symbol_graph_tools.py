@@ -107,7 +107,7 @@ def write_returns_equity_stacked_jpeg(sym_dir: Path, sym: str) -> None:
         "actual_daily_return",
         "predicted_return",
         "equity_predicted",
-        "equity_oracle",
+        "equity_actual",
         "suggestion_pred",
     }
     missing = need - set(detail.columns)
@@ -118,7 +118,7 @@ def write_returns_equity_stacked_jpeg(sym_dir: Path, sym: str) -> None:
     act = pd.to_numeric(detail["actual_daily_return"], errors="coerce")
     pred = pd.to_numeric(detail["predicted_return"], errors="coerce")
     eqp = pd.to_numeric(detail["equity_predicted"], errors="coerce")
-    eqo = pd.to_numeric(detail["equity_oracle"], errors="coerce")
+    eqa = pd.to_numeric(detail["equity_actual"], errors="coerce")
     sugg = detail["suggestion_pred"]
     buy_hold = _buy_hold_equity_from_actual_returns(eqp, act)
 
@@ -142,7 +142,7 @@ def write_returns_equity_stacked_jpeg(sym_dir: Path, sym: str) -> None:
     ax0.grid(True, alpha=0.25)
 
     ax1.plot(dts, eqp, color="black", linewidth=1.8, label="Equity predicted", zorder=3)
-    ax1.plot(dts, eqo, color="blue", linewidth=1.8, label="Equity oracle", zorder=3)
+    ax1.plot(dts, eqa, color="blue", linewidth=1.8, label="Equity actual", zorder=3)
     ax1.plot(
         dts,
         buy_hold,
@@ -152,7 +152,7 @@ def write_returns_equity_stacked_jpeg(sym_dir: Path, sym: str) -> None:
         zorder=3,
     )
     ax1.set_ylabel("Equity ($)")
-    ax1.set_title(f"{sym}: equity — predicted vs oracle vs buy-hold")
+    ax1.set_title(f"{sym}: equity — predicted vs actual vs buy-hold")
     ax1.legend(loc="upper left", fontsize=8)
     ax1.grid(True, alpha=0.25)
     ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))

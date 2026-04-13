@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SERT,2026-03-04,-0.0003601008282317908,-0.0003396069479655,True,0.0,SHORT,SHORT,36.74999999999269,36.74999999999269,100036.74999999999,100036.74999999999
 SERT,2026-03-05,0.008645533141210304,-0.0020655075963361,False,1763.9999999999884,SHORT,BUY,-881.9999999999942,881.9999999999942,99154.75,100918.74999999999
 SERT,2026-03-06,0.0,0.0019828590937355,False,0.0,BUY,HOLD,0.0,0.0,99154.75,100918.74999999999

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HASCOL,2026-03-04,0.016304347826086918,-0.0543009728328491,False,1371.3600000000013,HOLD,BUY,0.0,1371.3600000000013,100000.0,101371.36
 HASCOL,2026-03-05,0.09893048128342241,-0.0543241217977433,False,8456.720000000003,HOLD,BUY,0.0,8456.720000000003,100000.0,109828.08
 HASCOL,2026-03-06,-0.013990267639902743,-0.0547779082614798,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,109828.08

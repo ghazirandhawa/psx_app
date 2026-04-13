@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ABOT,2026-03-04,-0.018331162977060944,0.0088127414345277,False,1958.0999999999951,BUY,HOLD,-1958.0999999999951,-0.0,98041.90000000001,100000.0
 ABOT,2026-03-05,-0.035040816326530666,0.010162415028293,False,3674.3800000000033,BUY,HOLD,-3674.3800000000033,-0.0,94367.52,100000.0
 ABOT,2026-03-06,-0.03383880041452536,0.0083956753437174,False,3424.0,BUY,HOLD,-3424.0,-0.0,90943.52,100000.0

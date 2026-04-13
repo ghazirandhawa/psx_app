@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FCEPL,2026-03-04,-0.004683508373545253,-0.0112783965,True,0.0,SHORT,SHORT,450.44999999999766,450.44999999999766,100450.45,100450.45
 FCEPL,2026-03-05,0.03650363610437757,0.0005568098,True,0.0,BUY,BUY,3494.4000000000033,3494.4000000000033,103944.85,103944.85
 FCEPL,2026-03-06,-0.023937267849772903,-0.0023027076,True,0.0,SHORT,SHORT,2375.099999999993,2375.099999999993,106319.95,106319.95

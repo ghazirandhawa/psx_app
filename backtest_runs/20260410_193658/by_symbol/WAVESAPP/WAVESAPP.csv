@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 WAVESAPP,2026-03-04,0.03439153439153442,-0.0284727059837412,False,6815.120000000018,SHORT,BUY,-3407.560000000009,3407.560000000009,96592.43999999999,103407.56000000001
 WAVESAPP,2026-03-05,0.0588235294117645,-0.0308047595272664,False,12057.519999999975,SHORT,BUY,-6028.7599999999875,6028.7599999999875,90563.68000000001,109436.31999999999
 WAVESAPP,2026-03-06,-0.03623188405797084,-0.0321498126286864,True,0.0,SHORT,SHORT,3931.799999999986,3931.799999999986,94495.48,113368.11999999998

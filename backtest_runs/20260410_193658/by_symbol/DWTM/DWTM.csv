@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DWTM,2026-03-04,-0.006359300476947549,-0.021618435,True,0.0,SHORT,SHORT,1038.960000000001,1038.960000000001,101038.96,101038.96
 DWTM,2026-03-05,-0.09999999999999998,0.0009769837,False,32467.5,BUY,SHORT,-16233.75,16233.75,84805.21,117272.70999999999
 DWTM,2026-03-06,-0.055111111111111,0.0029516395,False,16103.87999999998,BUY,SHORT,-8051.93999999999,8051.93999999999,76753.27000000002,125324.65

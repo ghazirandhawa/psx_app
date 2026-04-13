@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SNGP,2026-03-04,0.02418191902384903,0.0045683313003641,True,0.0,BUY,BUY,2358.759999999992,2358.759999999992,102358.76,102358.76
 SNGP,2026-03-05,0.08014729773638041,0.002530953557737,True,0.0,BUY,BUY,8006.800000000007,8006.800000000007,110365.56,110365.56
 SNGP,2026-03-06,-0.03850396069387352,-0.0123273837551601,True,0.0,HOLD,HOLD,-0.0,-0.0,110365.56,110365.56

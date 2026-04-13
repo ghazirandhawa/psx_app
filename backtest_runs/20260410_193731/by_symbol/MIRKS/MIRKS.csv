@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MIRKS,2026-03-04,0.013233348037053227,-0.0091459301062923,False,1221.8999999999885,HOLD,BUY,0.0,1221.8999999999885,100000.0,101221.9
 MIRKS,2026-03-05,0.10013060513713534,0.0074339670881409,True,0.0,BUY,BUY,9367.900000000003,9367.900000000003,109367.90000000001,110589.79999999999
 MIRKS,2026-03-06,0.041155520379897004,-0.0014409490471281,False,4235.919999999996,HOLD,BUY,0.0,4235.919999999996,109367.90000000001,114825.71999999999

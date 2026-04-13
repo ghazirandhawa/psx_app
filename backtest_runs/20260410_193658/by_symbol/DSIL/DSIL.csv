@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DSIL,2026-03-04,0.0313014827018121,0.009779106,True,0.0,BUY,BUY,2978.059999999992,2978.059999999992,102978.06,102978.06
 DSIL,2026-03-05,0.05591054313099053,-0.014319471,False,10971.800000000017,SHORT,BUY,-5485.900000000009,5485.900000000009,97492.15999999999,108463.96
 DSIL,2026-03-06,-0.03479576399394868,0.0074236393,False,7210.040000000014,BUY,SHORT,-3605.020000000007,3605.020000000007,93887.13999999997,112068.98000000001

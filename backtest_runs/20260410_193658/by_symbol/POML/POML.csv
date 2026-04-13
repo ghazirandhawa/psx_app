@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 POML,2026-03-04,-0.09814787808079317,-0.0286679792227949,True,0.0,SHORT,SHORT,10821.839999999984,10821.839999999984,110821.83999999998,110821.83999999998
 POML,2026-03-05,0.015038809831824151,-0.0023455704595671,False,2990.879999999999,SHORT,BUY,-1495.4399999999996,1495.4399999999996,109326.39999999998,112317.27999999998
 POML,2026-03-06,0.0356061812967976,0.0005901317613852,True,0.0,BUY,BUY,3593.879999999988,3593.879999999988,112920.27999999997,115911.15999999997

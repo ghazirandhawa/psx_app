@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MEBL,2026-03-04,-0.012232346241457859,0.0146676119862243,False,2459.460000000002,BUY,SHORT,-1229.730000000001,1229.730000000001,98770.27,101229.73
 MEBL,2026-03-05,0.0551852962202799,0.0147050924409671,True,0.0,BUY,BUY,5479.970000000001,5479.970000000001,104250.24,106709.7
 MEBL,2026-03-06,-0.027668502491476565,0.0163250919359876,False,5798.280000000012,BUY,SHORT,-2899.140000000006,2899.140000000006,101351.09999999999,109608.84000000001

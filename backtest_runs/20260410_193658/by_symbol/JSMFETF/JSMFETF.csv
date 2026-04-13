@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JSMFETF,2026-03-04,-0.005780346820809301,-0.027244287916699,True,0.0,SHORT,SHORT,602.400000000005,602.400000000005,100602.40000000001,100602.40000000001
 JSMFETF,2026-03-05,0.06298449612403112,-0.0242983276501379,False,13052.000000000007,SHORT,BUY,-6526.000000000004,6526.000000000004,94076.4,107128.40000000001
 JSMFETF,2026-03-06,-0.013673655423883324,-0.0209741280809998,True,0.0,SHORT,SHORT,1506.0000000000036,1506.0000000000036,95582.40000000001,108634.40000000001

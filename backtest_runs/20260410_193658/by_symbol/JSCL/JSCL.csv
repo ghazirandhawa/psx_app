@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JSCL,2026-03-04,-0.0011092623405435376,-0.0443716680729976,True,0.0,SHORT,SHORT,109.21999999999767,109.21999999999767,100109.22,100109.22
 JSCL,2026-03-05,0.0471960022209883,-0.0421218419508829,False,9283.699999999977,SHORT,BUY,-4641.8499999999885,4641.8499999999885,95467.37000000001,104751.06999999999
 JSCL,2026-03-06,-0.02279957582184511,-0.0477411626867191,True,0.0,SHORT,SHORT,2348.2299999999987,2348.2299999999987,97815.6,107099.29999999999

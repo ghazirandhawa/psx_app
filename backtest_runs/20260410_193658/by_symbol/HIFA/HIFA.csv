@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HIFA,2026-03-04,0.03872437357630987,-0.0777408701180389,False,7234.179999999997,SHORT,BUY,-3617.0899999999983,3617.0899999999983,96382.91,103617.09
 HIFA,2026-03-05,0.1557017543859649,-0.0753674600270764,False,30213.34,SHORT,BUY,-15106.67,15106.67,81276.24,118723.76
 HIFA,2026-03-06,-0.018975332068311146,-0.0686235730652185,True,0.0,SHORT,SHORT,2127.6999999999925,2127.6999999999925,83403.94,120851.45999999999

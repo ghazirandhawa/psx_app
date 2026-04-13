@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SCBPL,2026-03-04,-0.04726844352819903,0.0083201695076669,False,5014.01999999999,BUY,HOLD,-5014.01999999999,-0.0,94985.98000000001,100000.0
 SCBPL,2026-03-05,0.027666151468315192,0.0010516750620459,True,0.0,BUY,BUY,2795.9799999999877,2795.9799999999877,97781.95999999999,102795.97999999998
 SCBPL,2026-03-06,0.007670326364866975,-0.0007749834297329,False,796.620000000008,HOLD,BUY,0.0,796.620000000008,97781.95999999999,103592.59999999999

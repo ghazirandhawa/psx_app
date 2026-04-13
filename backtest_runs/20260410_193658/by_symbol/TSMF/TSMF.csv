@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TSMF,2026-03-04,0.0109976433621366,-0.047750216,False,2030.5599999999824,SHORT,BUY,-1015.2799999999912,1015.2799999999912,98984.72000000002,101015.27999999998
 TSMF,2026-03-05,0.09790209790209814,-0.0055044116,False,18275.040000000023,SHORT,BUY,-9137.520000000011,9137.520000000011,89847.2,110152.8
 TSMF,2026-03-10,0.0,-0.007773416,False,0.0,SHORT,HOLD,-0.0,0.0,89847.2,110152.8

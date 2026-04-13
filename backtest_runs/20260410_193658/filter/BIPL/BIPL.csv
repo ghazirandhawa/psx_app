@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 BIPL,2026-03-04,0.02715849209566268,0.0135216028592676,True,0.0,BUY,BUY,2748.3399999999924,2748.3399999999924,102748.34,102748.34
 BIPL,2026-03-05,0.04893449092344104,0.0094788391933083,True,0.0,BUY,BUY,5086.479999999993,5086.479999999993,107834.81999999998,107834.81999999998
 BIPL,2026-03-06,-0.024454477050413814,0.0089436654805747,False,5332.5999999999885,BUY,SHORT,-2666.2999999999943,2666.2999999999943,105168.51999999999,110501.11999999998

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 WAHN,2026-03-04,0.05776187959839052,-0.0204149955434346,False,10998.540000000028,SHORT,BUY,-5499.270000000014,5499.270000000014,94500.72999999998,105499.27000000002
 WAHN,2026-03-05,0.059142264237952435,-0.0018181711584662,False,11911.85999999999,SHORT,BUY,-5955.929999999995,5955.929999999995,88544.79999999999,111455.20000000001
 WAHN,2026-03-06,-0.0919777947099163,-0.0037001293795483,True,0.0,SHORT,SHORT,9810.450000000008,9810.450000000008,98355.25,121265.65000000002

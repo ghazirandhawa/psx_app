@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HUSI,2026-03-04,-0.09991787571858746,0.0429717599649278,False,28010.099999999988,BUY,SHORT,-14005.049999999994,14005.049999999994,85994.95000000001,114005.04999999999
 HUSI,2026-03-05,-0.02676399026763998,0.0466678834647935,False,6753.12000000002,BUY,SHORT,-3376.56000000001,3376.56000000001,82618.39,117381.61
 HUSI,2026-03-06,-0.017187500000000022,0.0543378765154202,False,4220.700000000005,BUY,SHORT,-2110.3500000000026,2110.3500000000026,80508.04,119491.96

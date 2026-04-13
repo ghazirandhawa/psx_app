@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FEM,2026-03-04,0.06590621039290245,0.029981506005292,True,0.0,BUY,BUY,6364.800000000006,6364.800000000006,106364.8,106364.8
 FEM,2026-03-05,-0.030915576694411362,0.0202565987430077,False,6364.799999999995,BUY,SHORT,-3182.3999999999974,3182.3999999999974,103182.40000000001,109547.2
 FEM,2026-03-06,-0.03558282208588959,0.0201682512318673,False,7099.200000000001,BUY,SHORT,-3549.6000000000004,3549.6000000000004,99632.8,113096.8

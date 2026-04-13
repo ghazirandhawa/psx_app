@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 SLGL,2026-03-04,-0.0036832412523019054,-0.0021965496184346,True,0.0,SHORT,SHORT,414.65999999999116,414.65999999999116,100414.65999999999,100414.65999999999
 SLGL,2026-03-05,0.04682686383240897,0.0099370226293805,True,0.0,BUY,BUY,5252.359999999986,5252.359999999986,105667.01999999997,105667.01999999997
 SLGL,2026-03-06,-0.030606238964096533,0.0029680721936817,False,7187.439999999994,BUY,SHORT,-3593.719999999997,3593.719999999997,102073.29999999997,109260.73999999998

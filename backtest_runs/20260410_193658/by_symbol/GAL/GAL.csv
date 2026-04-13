@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 GAL,2026-03-04,0.0217885758593952,-0.0070407061926684,False,4703.940000000004,SHORT,BUY,-2351.970000000002,2351.970000000002,97648.03,102351.97
 GAL,2026-03-05,0.03822123289403789,-0.007972732959625,False,8431.380000000008,SHORT,BUY,-4215.690000000004,4215.690000000004,93432.34,106567.66
 GAL,2026-03-06,-0.030260208556670887,-0.00872761088303,True,0.0,SHORT,SHORT,3465.1800000000044,3465.1800000000044,96897.52,110032.84000000001

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AKBL,2026-03-04,-0.059387848332571935,-0.021086724,True,0.0,SHORT,SHORT,6292.000000000004,6292.000000000004,106292.0,106292.0
 AKBL,2026-03-05,0.03776104905293831,0.00837298,True,0.0,BUY,BUY,3763.0999999999995,3763.0999999999995,110055.1,110055.1
 AKBL,2026-03-06,-0.027612027612027634,0.009199226,False,5711.199999999999,BUY,SHORT,-2855.5999999999995,2855.5999999999995,107199.5,112910.7

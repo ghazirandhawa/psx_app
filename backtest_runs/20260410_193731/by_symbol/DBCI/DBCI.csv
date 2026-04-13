@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 DBCI,2026-03-04,-0.058380414312617646,0.0702539057390709,False,6078.479999999992,BUY,HOLD,-6078.479999999992,-0.0,93921.52,100000.0
 DBCI,2026-03-05,0.15799999999999992,0.0724933739516881,True,0.0,BUY,BUY,15490.320000000002,15490.320000000002,109411.84000000001,115490.32
 DBCI,2026-03-06,-0.15716753022452512,0.0642737616077302,False,17843.280000000002,BUY,HOLD,-17843.280000000002,-0.0,91568.56000000001,115490.32

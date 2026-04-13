@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PAKD,2026-03-04,-0.022257403613335836,-0.009305483,True,0.0,SHORT,SHORT,2019.5500000000004,2019.5500000000004,102019.55,102019.55
 PAKD,2026-03-05,0.009524716639679909,-0.030572698,False,1690.0,SHORT,BUY,-845.0,845.0,101174.55,102864.55
 PAKD,2026-03-06,-0.039343334276818576,-0.020196814,True,0.0,SHORT,SHORT,3523.6500000000015,3523.6500000000015,104698.2,106388.2

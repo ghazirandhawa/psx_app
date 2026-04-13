@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HPL,2026-03-04,0.030391708123547856,0.0213216370729256,True,0.0,BUY,BUY,3037.7500000000055,3037.7500000000055,103037.75,103037.75
 HPL,2026-03-05,-0.02882776164907619,0.0259413314167549,False,2969.0000000000055,BUY,HOLD,-2969.0000000000055,-0.0,100068.75,103037.75
 HPL,2026-03-06,-0.007428365759532984,0.0263819657172959,False,743.0000000000064,BUY,HOLD,-743.0000000000064,-0.0,99325.75,103037.75

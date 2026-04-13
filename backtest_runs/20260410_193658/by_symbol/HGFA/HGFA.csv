@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HGFA,2026-03-04,0.03928571428571437,-0.0380006139604643,False,7442.6000000000095,SHORT,BUY,-3721.3000000000047,3721.3000000000047,96278.7,103721.3
 HGFA,2026-03-05,0.044673539518900185,-0.0441815366599256,False,8795.799999999981,SHORT,BUY,-4397.8999999999905,4397.8999999999905,91880.8,108119.2
 HGFA,2026-03-06,-0.05263157894736836,-0.0355943926608679,True,0.0,SHORT,SHORT,5412.799999999993,5412.799999999993,97293.59999999999,113531.99999999999

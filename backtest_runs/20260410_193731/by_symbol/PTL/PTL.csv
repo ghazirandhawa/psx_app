@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 PTL,2026-03-04,0.032024399542508464,-0.0642206770133193,False,3400.3199999999993,HOLD,BUY,0.0,3400.3199999999993,100000.0,103400.31999999999
 PTL,2026-03-05,-0.003324713705208704,-0.0649935676822286,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,103400.31999999999
 PTL,2026-03-06,-0.020200148257968897,-0.0645893399279627,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,103400.31999999999

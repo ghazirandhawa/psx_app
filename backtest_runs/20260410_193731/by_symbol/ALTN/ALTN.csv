@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ALTN,2026-03-04,-0.004439511653718031,-0.029968774,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 ALTN,2026-03-05,0.014492753623188248,-0.014535067,False,1511.6399999999885,HOLD,BUY,0.0,1511.6399999999885,100000.0,101511.63999999998
 ALTN,2026-03-06,-0.027472527472527486,-0.019969177,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,101511.63999999998

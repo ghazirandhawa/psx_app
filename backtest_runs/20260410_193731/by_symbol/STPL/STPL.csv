@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 STPL,2026-03-04,0.04051863857374394,0.0060684838879715,True,0.0,BUY,BUY,3987.25,3987.25,103987.25,103987.25
 STPL,2026-03-05,0.05763239875389403,0.0054705167450646,True,0.0,BUY,BUY,5901.130000000002,5901.130000000002,109888.38,109888.38
 STPL,2026-03-06,-0.038291605301914555,0.0056353174523067,False,4146.739999999997,BUY,HOLD,-4146.739999999997,-0.0,105741.64,109888.38

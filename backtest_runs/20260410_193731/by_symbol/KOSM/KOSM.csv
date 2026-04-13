@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KOSM,2026-03-04,0.018617021276595924,-0.0048744300942838,False,1535.1000000000063,HOLD,BUY,0.0,1535.1000000000063,100000.0,101535.1
 KOSM,2026-03-05,0.07310704960835523,0.0060726851521135,True,0.0,BUY,BUY,6140.400000000005,6140.400000000005,106140.40000000001,107675.50000000001
 KOSM,2026-03-06,-0.019464720194647178,0.0042814902730912,False,1754.4000000000015,BUY,HOLD,-1754.4000000000015,-0.0,104386.0,107675.50000000001

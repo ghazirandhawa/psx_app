@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 FCL,2026-03-04,-0.005591798695247063,0.0110571745081485,False,588.4800000000049,BUY,HOLD,-588.4800000000049,-0.0,99411.51999999999,100000.0
 FCL,2026-03-05,0.043580131208997175,0.0152973267929146,True,0.0,BUY,BUY,4560.719999999998,4560.719999999998,103972.23999999999,104560.72
 FCL,2026-03-06,-0.02649303996407726,0.0125264219666551,False,2893.359999999999,BUY,HOLD,-2893.359999999999,-0.0,101078.87999999999,104560.72

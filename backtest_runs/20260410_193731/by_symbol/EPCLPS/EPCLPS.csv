@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 EPCLPS,2026-03-04,0.0,0.0918307222662819,False,0.0,BUY,HOLD,0.0,0.0,100000.0,100000.0
 EPCLPS,2026-03-09,-0.01244444444444448,0.0121506570640141,False,1138.2000000000046,BUY,HOLD,-1138.2000000000046,-0.0,98861.79999999999,100000.0
 EPCLPS,2026-03-10,0.012601260126012592,0.0004581480219171,True,0.0,BUY,BUY,1138.2000000000046,1138.2000000000046,100000.0,101138.20000000001

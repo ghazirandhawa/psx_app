@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 MTL,2026-03-04,0.012486950113610895,-0.0059009476960061,False,2452.200000000009,SHORT,BUY,-1226.1000000000045,1226.1000000000045,98773.9,101226.1
 MTL,2026-03-05,0.0035179232122277693,-0.0067307042599694,False,699.4800000000037,SHORT,BUY,-349.7400000000018,349.7400000000018,98424.15999999999,101575.84000000001
 MTL,2026-03-06,0.00826030019139723,-0.0044541186723963,False,1648.1999999999862,SHORT,BUY,-824.0999999999931,824.0999999999931,97600.06,102399.94

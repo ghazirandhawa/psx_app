@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JSGBETF,2026-03-04,-0.07159353348729791,-0.0625586430147542,True,0.0,SHORT,SHORT,8035.199999999997,8035.199999999997,108035.2,108035.2
 JSGBETF,2026-03-05,0.04809286898839149,-0.0207426808801646,False,10022.400000000012,SHORT,BUY,-5011.200000000006,5011.200000000006,103023.99999999999,113046.40000000001
 JSGBETF,2026-03-06,-0.03850210970464141,0.0028055372378173,False,8409.600000000006,BUY,SHORT,-4204.800000000003,4204.800000000003,98819.19999999998,117251.20000000001

@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 UBDL,2026-03-04,0.05671506352087108,0.0670906628161253,True,0.0,BUY,BUY,5508.75,5508.75,105508.75,105508.75
 UBDL,2026-03-05,0.003434950622584809,0.0650931866863342,True,0.0,BUY,BUY,352.56000000000813,352.56000000000813,105861.31000000001,105861.31000000001
 UBDL,2026-03-06,-0.015832263585793815,0.0634582572139707,False,3261.180000000009,BUY,SHORT,-1630.5900000000045,1630.5900000000045,104230.72,107491.90000000001

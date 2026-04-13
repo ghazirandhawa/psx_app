@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 KTML,2026-03-04,-0.04242541650523046,-0.0138519282153243,True,0.0,HOLD,HOLD,-0.0,-0.0,100000.0,100000.0
 KTML,2026-03-05,0.013352215253894517,0.002520419606149,True,0.0,BUY,BUY,1351.0200000000075,1351.0200000000075,101351.02,101351.02
 KTML,2026-03-06,-0.023357955679776388,4.155658218430738e-05,False,2394.9900000000034,BUY,HOLD,-2394.9900000000034,-0.0,98956.03,101351.02

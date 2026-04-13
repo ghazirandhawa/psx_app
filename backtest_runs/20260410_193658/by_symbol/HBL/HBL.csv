@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HBL,2026-03-04,-0.03700925231307828,-0.00015545072,True,0.0,SHORT,SHORT,4009.320000000005,4009.320000000005,104009.32,104009.32
 HBL,2026-03-05,0.04436695477983443,-0.007158651,False,9257.039999999985,SHORT,BUY,-4628.519999999992,4628.519999999992,99380.80000000002,108637.84
 HBL,2026-03-06,-0.010727098355414966,0.0071045626,False,2337.479999999986,BUY,SHORT,-1168.739999999993,1168.739999999993,98212.06000000003,109806.57999999999

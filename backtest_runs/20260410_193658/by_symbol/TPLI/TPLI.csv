@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 TPLI,2026-03-04,0.0,0.0239939420223761,False,0.0,BUY,HOLD,0.0,0.0,100000.0,100000.0
 TPLI,2026-03-05,0.07309273640931924,0.0275024354765312,True,0.0,BUY,BUY,7271.99999999999,7271.99999999999,107271.99999999999,107271.99999999999
 TPLI,2026-03-06,0.01404853128991057,0.0295267569559322,True,0.0,BUY,BUY,1499.8500000000083,1499.8500000000083,108771.85,108771.85

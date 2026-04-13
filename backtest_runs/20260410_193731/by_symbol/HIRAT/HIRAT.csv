@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 HIRAT,2026-03-04,0.0,-0.0143198692327446,True,0.0,HOLD,HOLD,0.0,0.0,100000.0,100000.0
 HIRAT,2026-03-05,0.12585034013605445,0.0056469515870048,True,0.0,BUY,BUY,11349.750000000004,11349.750000000004,111349.75,111349.75
 HIRAT,2026-03-06,-0.027190332326283984,0.0228573216980503,False,2760.7499999999955,BUY,HOLD,-2760.7499999999955,-0.0,108589.0,111349.75

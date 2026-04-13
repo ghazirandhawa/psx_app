@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 AMTEX,2026-03-04,0.008645533141210304,-0.06252474,False,1570.6799999999898,SHORT,BUY,-785.3399999999949,785.3399999999949,99214.66,100785.34
 AMTEX,2026-03-05,0.08571428571428563,-0.015210603,False,15706.79999999999,SHORT,BUY,-7853.399999999995,7853.399999999995,91361.26000000001,108638.73999999999
 AMTEX,2026-03-06,0.02894736842105261,-0.017227475,False,5759.160000000017,SHORT,BUY,-2879.5800000000086,2879.5800000000086,88481.68,111518.32

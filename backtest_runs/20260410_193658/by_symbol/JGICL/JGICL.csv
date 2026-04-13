@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 JGICL,2026-03-04,0.027540223220756666,-0.02188634,False,5152.800000000016,SHORT,BUY,-2576.400000000008,2576.400000000008,97423.59999999999,102576.40000000001
 JGICL,2026-03-05,0.027225278600648828,0.003937442,True,0.0,BUY,BUY,2617.07999999999,2617.07999999999,100040.67999999998,105193.48
 JGICL,2026-03-06,-0.022795935182642113,0.0031581207,False,4501.919999999991,BUY,SHORT,-2250.9599999999955,2250.9599999999955,97789.71999999999,107444.43999999999

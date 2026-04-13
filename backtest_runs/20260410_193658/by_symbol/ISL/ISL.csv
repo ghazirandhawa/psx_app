@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ISL,2026-03-04,-0.030910716566611374,-0.012151526,True,0.0,SHORT,SHORT,3303.3000000000025,3303.3000000000025,103303.3,103303.3
 ISL,2026-03-05,0.06023461183603529,-0.009639718,False,12476.099999999982,SHORT,BUY,-6238.049999999991,6238.049999999991,97065.25000000001,109541.34999999999
 ISL,2026-03-06,-0.057931377424166985,-0.016394597,True,0.0,SHORT,SHORT,6360.899999999995,6360.899999999995,103426.15000000001,115902.24999999999

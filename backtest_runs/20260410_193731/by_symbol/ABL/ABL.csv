@@ -1,4 +1,4 @@
-symbol,DATE,actual_daily_return,predicted_return,same_side_as_oracle,daily_pnl_diff_oracle_minus_model,suggestion_pred,suggestion_oracle,daily_pnl_predicted,daily_pnl_oracle,equity_predicted,equity_oracle
+symbol,DATE,actual_daily_return,predicted_return,same_side_as_actual,daily_pnl_diff_actual_minus_model,suggestion_pred,suggestion_actual,daily_pnl_predicted,daily_pnl_actual,equity_predicted,equity_actual
 ABL,2026-03-04,-0.011281271919569846,0.0172071230536185,False,1134.840000000004,BUY,HOLD,-1134.840000000004,-0.0,98865.15999999999,100000.0
 ABL,2026-03-05,0.037067691398167124,0.0154907733589167,True,0.0,BUY,BUY,3686.7599999999893,3686.7599999999893,102551.91999999998,103686.76
 ABL,2026-03-06,-0.02873104549082195,0.0165807635439703,False,2963.5199999999954,BUY,HOLD,-2963.5199999999954,-0.0,99588.4,103686.76
