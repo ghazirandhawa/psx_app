@@ -45,17 +45,37 @@ means no net long or short bet—treated as neutral versus the day’s return si
 negative, or approximately zero = flat band)—same logic as chart shading.
 """
 
+TERMS_GLOSSARY_MD = """
+### Glossary: equity, returns, PnL, and paths
+
+**Equity ($).** The simulated **portfolio value in dollars** at the end of each day after the backtest applies position sizing and that day’s returns. It answers: “How many dollars would the account show?”
+- **`equity_predicted`**: Value along the **model path**—following **`suggestion_pred`** and **`predicted_return`** (black line on the equity chart).
+- **`equity_actual`**: Value along the **realized path** in the export—driven by **`actual_daily_return`** and the rules that produce **`suggestion_actual`** (blue line).
+
+**Daily return.** A **one-day simple return** for the symbol (a small decimal; charts often multiply by 100 to show **%**).
+- **`actual_daily_return`**: The **realized** market move used as the benchmark for each date.
+- **`predicted_return`**: The **model’s forecast** of that day’s return.
+
+**Total return (%).** **Percent** gain or loss from **starting equity to ending equity** over the whole backtest window (**not annualized**). When computed from equity columns, it is **(last equity ÷ first equity − 1) × 100**.
+
+**Daily PnL ($).** **Dollar change in equity from the prior row to this row** on the same path: **`daily_pnl_predicted`** for the model path, **`daily_pnl_actual`** for the realized path. “PnL” is **profit and loss** for that single day.
+
+**Predicted vs actual columns.** “**Pred**” / **`_*_predicted`** always refers to the **model simulation**; “**actual**” / **`_*_actual`** refers to the **realized benchmark path** in the export (not “ground truth” outside the file—just the labeled path in your data).
+
+**Accuracy.** **Daily prediction accuracy** here means: each **trading day** in the detail CSV, does the **side** implied by **`suggestion_pred`** (long / short / flat) match the **sign** of **`actual_daily_return`**? **Days correct** counts “yes”; **Days total** counts rows; **Daily Prediction Accuracy $%** is 100 × correct ÷ total.
+"""
+
 # Header tooltips (Streamlit ``column_config``); hover the ``?`` on each column in ``st.dataframe``.
 # Keys must match the ``DataFrame`` column names built in ``build_leaderboard`` / detail CSV headers.
 LEADERBOARD_COLUMN_HELP: dict[str, str] = {
-    "Symbol": "Same ticker as the symbol folder and the **`symbol`** column in that folder’s detail CSV.",
-    "Days correct": "Count of rows where **`suggestion_pred`** (long / short / flat) matched the sign of **`actual_daily_return`** in the detail CSV.",
-    "Days total": "Row count in the detail CSV used for the **Days correct** calculation (one row per trading **`DATE`**).",
-    "Daily Prediction Accuracy $%": "Per trading day: 100 × (**`Days correct`** ÷ **`Days total`**), where **`Days correct`** counts days whose **`suggestion_pred`** side matched the sign of **`actual_daily_return`**.",
-    "Equity pred ($)": "Last-day **`final_equity_predicted`** from the run’s ``summary.csv`` when present; otherwise last **`equity_predicted`** in the detail CSV.",
-    "Equity actual ($)": "Last-day **`final_equity_actual`** from ``summary.csv`` when present; otherwise last **`equity_actual`** in the detail CSV (blue equity line).",
-    "Return pred (%)": "Total return % from **`total_return_predicted`** in ``summary.csv`` when present; otherwise from last **`equity_predicted`** vs first row (not annualized).",
-    "Return actual (%)": "Total return % from **`total_return_actual`** in ``summary.csv`` when present; otherwise from last **`equity_actual`** vs first row (not annualized).",
+    "Symbol": "**Ticker** for the row—the company or instrument whose detail CSV and folder you are viewing. Same string as **`symbol`** in that CSV.",
+    "Days correct": "**Daily direction hits:** number of detail rows where the **side** from **`suggestion_pred`** (long / short / flat) matched the **sign** of **`actual_daily_return`** that day (with a small band around zero counted as flat). See glossary: *Accuracy*.",
+    "Days total": "**Trading-day count** in the symbol’s detail CSV used as the denominator for **Daily Prediction Accuracy $%**—one row per **`DATE`** in that file.",
+    "Daily Prediction Accuracy $%": "**Daily prediction accuracy:** 100 × (**`Days correct`** ÷ **`Days total`**). Measures how often the model’s **discrete suggestion** lined up with the **realized daily return sign**, not dollar PnL quality. The “$%” label is display text; the value is still a **percent**.",
+    "Equity pred ($)": "**Equity** = simulated portfolio **value in dollars** on the **model path** (see glossary). This cell is the **last day’s** **`final_equity_predicted`** from ``summary.csv`` if present, else the last **`equity_predicted`** in the detail CSV.",
+    "Equity actual ($)": "**Equity** on the **realized path** in the export (glossary: **`equity_actual`**). Last day’s **`final_equity_actual`** from ``summary.csv`` if present, else last **`equity_actual`** in the detail CSV—the same endpoint as the **blue** equity curve.",
+    "Return pred (%)": "**Total return** (glossary) on the **predicted** path, expressed as **percent** over the window: from **`total_return_predicted`** in ``summary.csv`` when present (scaled to % in this table), else from first vs last **`equity_predicted`**.",
+    "Return actual (%)": "**Total return** on the **realized** path as **percent**: from **`total_return_actual`** in ``summary.csv`` when present, else from first vs last **`equity_actual`**.",
 }
 
 _LEADERBOARD_COLS = frozenset(LEADERBOARD_COLUMN_HELP)
@@ -71,24 +91,25 @@ assert _LEADERBOARD_COLS == {
 }, "LEADERBOARD_COLUMN_HELP keys must match build_leaderboard row_out keys"
 
 DETAIL_BACKTEST_COLUMN_HELP: dict[str, str] = {
-    "symbol": "Ticker; same value as **Symbol** on the leaderboard for that run.",
-    "DATE": "Trading date for this row.",
-    "actual_daily_return": "Realized daily simple return (input to direction checks vs **`suggestion_pred`**).",
-    "predicted_return": "Model’s predicted daily return for this **`DATE`**.",
-    "same_side_as_actual": "True when **`suggestion_pred`** equals **`suggestion_actual`** (same strings as the green/red row shading).",
-    "daily_pnl_diff_actual_minus_model": "For this row: **`daily_pnl_actual`** minus **`daily_pnl_predicted`** (difference between actual-path and model-path daily PnL).",
-    "suggestion_pred": "Model suggestion for this row (e.g. BUY, SHORT, HOLD).",
-    "suggestion_actual": "Realized-path suggestion compared to **`suggestion_pred`** for **`same_side_as_actual`** and row colors.",
-    "suggestion_oracle": "Legacy header; same role as **`suggestion_actual`** if your file was not yet renamed.",
-    "daily_pnl_predicted": "Daily PnL ($) on the **`equity_predicted`** path.",
-    "daily_pnl_actual": "Daily PnL ($) on the **`equity_actual`** path.",
-    "equity_predicted": "Cumulative equity ($) on the model path (black line on the equity chart).",
-    "equity_actual": "Cumulative equity ($) on the realized path (blue line on the equity chart).",
+    "symbol": "**Ticker**; same meaning as **Symbol** on the leaderboard.",
+    "DATE": "Calendar **trading date** for this row (one observation per market day in the export).",
+    "actual_daily_return": "**Realized daily simple return** for the symbol that day (decimal form; charts may show ×100). Used with **`suggestion_pred`** to score **daily direction accuracy** (sign match). See glossary: *Daily return*.",
+    "predicted_return": "**Model-forecast** daily simple return for this **`DATE`** (same units as **`actual_daily_return`**). Feeds the **`equity_predicted`** path.",
+    "same_side_as_actual": "True when **`suggestion_pred`** and **`suggestion_actual`** strings are equal—same rule as **green** vs **red** row shading in the preview.",
+    "daily_pnl_diff_actual_minus_model": "**Dollar** difference for this date: **`daily_pnl_actual`** − **`daily_pnl_predicted`**. See glossary: *Daily PnL*.",
+    "suggestion_pred": "**Model output** for the day: discrete stance (e.g. BUY = long, SHORT, HOLD = flat) used to build **`equity_predicted`**.",
+    "suggestion_actual": "**Realized-path stance** from the export, paired with **`suggestion_pred`** for **`same_side_as_actual`** and row colors.",
+    "suggestion_oracle": "Legacy column name; same meaning as **`suggestion_actual`** if your file predates the rename.",
+    "daily_pnl_predicted": "**Daily PnL ($):** one-day **dollar** change on the **`equity_predicted`** path (glossary: *Daily PnL*).",
+    "daily_pnl_actual": "**Daily PnL ($):** one-day **dollar** change on the **`equity_actual`** path.",
+    "equity_predicted": "**Cumulative equity ($)** on the **model simulation** after this date’s move (glossary: *Equity*; black line on the chart).",
+    "equity_actual": "**Cumulative equity ($)** on the **realized path** in the file (glossary: *Equity*; blue line).",
 }
 
 PILOT_COLUMN_HELP_FALLBACK = (
-    "Workbook column **`{col}`** (pilot / compiled sheet). "
-    "Open the downloaded `.xlsx` or source workbook for full context."
+    "Workbook column **`{col}`** from the pilot / compiled sheet. "
+    "For **equity**, **return**, **PnL**, and path definitions, see the **Glossary** on the **Returns-based accuracy** tab. "
+    "Open the downloaded `.xlsx` for full workbook context."
 )
 
 
@@ -475,9 +496,12 @@ def main() -> None:
 
     with tab_acc:
         st.markdown(MOVES_HELP_MD)
+        st.markdown(TERMS_GLOSSARY_MD)
         st.markdown(
             "Per-symbol **daily direction accuracy**: trading days where **`suggestion_pred`** matched the sign of "
-            "**`actual_daily_return`** in the detail CSV — same rule as green/red shading on the charts."
+            "**`actual_daily_return`** in the detail CSV — same rule as green/red shading on the charts. "
+            "**Equity** columns are **dollar** portfolio values; **Return** columns are **whole-window total return in %** "
+            "(not annualized), aligned with ``summary.csv`` when those fields exist."
         )
         for i, rd in enumerate(run_paths):
             st.subheader(run_heading(rd))
@@ -488,11 +512,12 @@ def main() -> None:
                 st.metric("Symbols in table", len(lb))
                 st.caption(
                     "Sorted by **Days correct**, then **Daily Prediction Accuracy $%**. "
-                    "**Equity pred ($)** / **Equity actual ($)** / **Return pred (%)** / **Return actual (%)** use "
-                    "``summary.csv`` columns **`final_equity_predicted`**, **`final_equity_actual`**, "
-                    "**`total_return_predicted`**, **`total_return_actual`** when present; else last "
-                    "**`equity_predicted`** / **`equity_actual`** in each symbol’s detail CSV. "
-                    "Hover the **?** on each column header for definitions."
+                    "**Equity pred ($)** / **Equity actual ($)** are **last-day portfolio value in dollars** on the "
+                    "model vs realized path (see glossary). **Return pred (%)** / **Return actual (%)** are **total return "
+                    "over the run in percent** (not annualized). Data source: ``summary.csv`` fields "
+                    "**`final_equity_predicted`**, **`final_equity_actual`**, **`total_return_predicted`**, "
+                    "**`total_return_actual`** when present; otherwise last **`equity_predicted`** / **`equity_actual`** "
+                    "in each symbol’s detail CSV. Hover the **?** on each column header for the same definitions in short form."
                 )
                 st.dataframe(
                     arrow_safe_dataframe(lb),
@@ -506,7 +531,9 @@ def main() -> None:
     with tab_charts:
         st.caption(
             "Compare runs **side by side**: each row is one chart type; columns are the selected runs. "
-            "For **long / short / flat**, see the Returns-based accuracy tab."
+            "Top subplot: **daily returns** (**`actual_daily_return`** vs **`predicted_return`**, scaled to %). "
+            "Bottom subplot: **equity** in **$** (**`equity_predicted`** black, **`equity_actual`** blue, buy-hold orange). "
+            "For **long / short / flat** and the full **glossary** (equity, total return, PnL), see **Returns-based accuracy**."
         )
         sym_dirs: list[Path | None] = [
             resolve_symbol_dir(rd, symbol, loc_key) for rd in run_paths
@@ -540,10 +567,14 @@ def main() -> None:
     with tab_tables:
         st.caption(
             "Tables are **top to bottom**: backtest detail per run, then pilot. "
-            "Long / short / flat: see **Returns-based accuracy**."
+            "**Equity** = dollar portfolio value along a path; **returns** in the detail sheet are **daily** simple returns; "
+            "**PnL** columns are **dollar day-over-day** changes. For full definitions, open the glossary below."
         )
+        with st.expander("Glossary: equity, returns, PnL, predicted vs actual", expanded=False):
+            st.markdown(TERMS_GLOSSARY_MD)
         st.markdown(
-            "Spreadsheet previews: one block per run, then the pilot workbook at the bottom."
+            "Spreadsheet previews: one block per run, then the pilot workbook at the bottom. "
+            "Hover the **?** on each column header for column-specific notes (aligned with the glossary)."
         )
         for i, rd in enumerate(run_paths):
             st.subheader(run_heading(rd))
@@ -569,8 +600,10 @@ def main() -> None:
                     key=f"dl-bt-{rd.name}-{symbol}",
                 )
                 st.caption(
-                    "Row colors match the downloaded .xlsx: green when `suggestion_pred` equals "
-                    "`suggestion_actual`, red otherwise (Excel theme: light green / light red fills). "
+                    "Row colors match the downloaded .xlsx: green when **`suggestion_pred`** equals **`suggestion_actual`**, "
+                    "red otherwise (Excel theme: light green / light red fills). "
+                    "**Equity** = cumulative **$** path; **daily PnL** = one-day **$** change on that path; "
+                    "**daily returns** are **`predicted_return`** vs **`actual_daily_return`**. "
                     "Hover the **?** on each column header for definitions."
                 )
                 try:
