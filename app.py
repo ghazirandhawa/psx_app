@@ -38,11 +38,13 @@ _DETAIL_ROW_GREEN = "#C6EFCE"
 _DETAIL_ROW_RED = "#FFC7CE"
 
 MOVES_HELP_MD = """
-**How suggestions map to sides (same as the backtest):** **Long** (often labeled BUY) means you want
-exposure to positive daily moves; **Short** means exposure to negative moves; **Flat** (HOLD / cash)
-means no net long or short bet—treated as neutral versus the day’s return sign. A day counts toward
-**Days correct** (daily count) when **`suggestion_pred`** matches the sign of **`actual_daily_return`** that day (positive,
-negative, or approximately zero = flat band)—same logic as chart shading.
+**How suggestions map to sides (same as the backtest)**
+
+1. **Long** (often labeled BUY): you want exposure to **positive** daily moves—the position is treated as **long** versus the day’s return sign.
+2. **Short**: you want exposure to **negative** daily moves—the position is treated as **short** versus the day’s return sign.
+3. **Flat** (HOLD / cash): **no** net long or short bet—treated as **neutral** versus the day’s return sign.
+
+A day counts toward **Days correct** (daily count) when **`suggestion_pred`** matches the sign of **`actual_daily_return`** that day (**positive**, **negative**, or approximately **zero** = flat band)—same logic as chart shading.
 """
 
 TERMS_GLOSSARY_MD = """
