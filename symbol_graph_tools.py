@@ -6,6 +6,7 @@ Writes a single stacked figure (daily returns on top, equity below) used by
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import matplotlib
@@ -19,6 +20,24 @@ import pandas as pd
 RETURN_SIGN_EPS = 1e-12
 
 RETURNS_EQUITY_STACKED_JPEG = "returns_equity_stacked.jpeg"
+
+_ORACLE_HEADER = re.compile("oracle", re.IGNORECASE)
+
+
+def rename_dataframe_columns_oracle_to_actual(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Replace the substring ``oracle`` with ``actual`` in column names (e.g. ``equity_oracle``).
+    Leaves data values unchanged.
+    """
+    mapping: dict[str, str] = {}
+    for c in df.columns:
+        name = str(c)
+        if not _ORACLE_HEADER.search(name):
+            continue
+        mapping[c] = _ORACLE_HEADER.sub("actual", name)
+    if not mapping:
+        return df
+    return df.rename(columns=mapping)
 
 
 def delete_symbol_folder_jpegs(sym_dir: Path) -> None:

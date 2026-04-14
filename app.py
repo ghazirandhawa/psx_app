@@ -40,10 +40,81 @@ _DETAIL_ROW_RED = "#FFC7CE"
 MOVES_HELP_MD = """
 **How suggestions map to sides (same as the backtest):** **Long** (often labeled BUY) means you want
 exposure to positive daily moves; **Short** means exposure to negative moves; **Flat** (HOLD / cash)
-means no net long or short bet—treated as neutral versus the day’s return sign. Accuracy counts a day
-as correct when that side matches whether the **actual daily return** was positive, negative, or
-approximately zero (flat band).
+means no net long or short bet—treated as neutral versus the day’s return sign. A day counts toward
+**Days correct** (daily count) when **`suggestion_pred`** matches the sign of **`actual_daily_return`** that day (positive,
+negative, or approximately zero = flat band)—same logic as chart shading.
 """
+
+# Header tooltips (Streamlit ``column_config``); hover the ``?`` on each column in ``st.dataframe``.
+# Keys must match the ``DataFrame`` column names built in ``build_leaderboard`` / detail CSV headers.
+LEADERBOARD_COLUMN_HELP: dict[str, str] = {
+    "Symbol": "Same ticker as the symbol folder and the **`symbol`** column in that folder’s detail CSV.",
+    "Days correct": "Count of rows where **`suggestion_pred`** (long / short / flat) matched the sign of **`actual_daily_return`** in the detail CSV.",
+    "Days total": "Row count in the detail CSV used for the **Days correct** calculation (one row per trading **`DATE`**).",
+    "Daily Prediction Accuracy $%": "Per trading day: 100 × (**`Days correct`** ÷ **`Days total`**), where **`Days correct`** counts days whose **`suggestion_pred`** side matched the sign of **`actual_daily_return`**.",
+    "Equity pred ($)": "Last-day **`final_equity_predicted`** from the run’s ``summary.csv`` when present; otherwise last **`equity_predicted`** in the detail CSV.",
+    "Equity actual ($)": "Last-day **`final_equity_actual`** from ``summary.csv`` when present; otherwise last **`equity_actual`** in the detail CSV (blue equity line).",
+    "Return pred (%)": "Total return % from **`total_return_predicted`** in ``summary.csv`` when present; otherwise from last **`equity_predicted`** vs first row (not annualized).",
+    "Return actual (%)": "Total return % from **`total_return_actual`** in ``summary.csv`` when present; otherwise from last **`equity_actual`** vs first row (not annualized).",
+}
+
+_LEADERBOARD_COLS = frozenset(LEADERBOARD_COLUMN_HELP)
+assert _LEADERBOARD_COLS == {
+    "Symbol",
+    "Days correct",
+    "Days total",
+    "Daily Prediction Accuracy $%",
+    "Equity pred ($)",
+    "Equity actual ($)",
+    "Return pred (%)",
+    "Return actual (%)",
+}, "LEADERBOARD_COLUMN_HELP keys must match build_leaderboard row_out keys"
+
+DETAIL_BACKTEST_COLUMN_HELP: dict[str, str] = {
+    "symbol": "Ticker; same value as **Symbol** on the leaderboard for that run.",
+    "DATE": "Trading date for this row.",
+    "actual_daily_return": "Realized daily simple return (input to direction checks vs **`suggestion_pred`**).",
+    "predicted_return": "Model’s predicted daily return for this **`DATE`**.",
+    "same_side_as_actual": "True when **`suggestion_pred`** equals **`suggestion_actual`** (same strings as the green/red row shading).",
+    "daily_pnl_diff_actual_minus_model": "For this row: **`daily_pnl_actual`** minus **`daily_pnl_predicted`** (difference between actual-path and model-path daily PnL).",
+    "suggestion_pred": "Model suggestion for this row (e.g. BUY, SHORT, HOLD).",
+    "suggestion_actual": "Realized-path suggestion compared to **`suggestion_pred`** for **`same_side_as_actual`** and row colors.",
+    "suggestion_oracle": "Legacy header; same role as **`suggestion_actual`** if your file was not yet renamed.",
+    "daily_pnl_predicted": "Daily PnL ($) on the **`equity_predicted`** path.",
+    "daily_pnl_actual": "Daily PnL ($) on the **`equity_actual`** path.",
+    "equity_predicted": "Cumulative equity ($) on the model path (black line on the equity chart).",
+    "equity_actual": "Cumulative equity ($) on the realized path (blue line on the equity chart).",
+}
+
+PILOT_COLUMN_HELP_FALLBACK = (
+    "Workbook column **`{col}`** (pilot / compiled sheet). "
+    "Open the downloaded `.xlsx` or source workbook for full context."
+)
+
+
+def _detail_preview_columns(df_or_styler: object) -> pd.Index:
+    from pandas.io.formats.style import Styler
+
+    if isinstance(df_or_styler, Styler):
+        return df_or_styler.data.columns
+    return df_or_styler.columns  # type: ignore[union-attr]
+
+
+def dataframe_column_tooltips(
+    df_or_styler: object,
+    help_by_column: dict[str, str],
+    *,
+    unknown_template: str = "Column `{col}` — values come from the loaded file.",
+) -> dict[str, st.column_config.Column]:
+    lower = {str(k).lower(): v for k, v in help_by_column.items()}
+    out: dict[str, st.column_config.Column] = {}
+    for c in _detail_preview_columns(df_or_styler):
+        name = str(c)
+        h = help_by_column.get(name) or lower.get(name.lower())
+        if h is None:
+            h = unknown_template.format(col=name)
+        out[name] = st.column_config.Column(help=h)
+    return out
 
 
 def arrow_safe_dataframe(df: pd.DataFrame) -> pd.DataFrame:
@@ -62,17 +133,27 @@ def arrow_safe_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def _detail_suggestion_actual_column(df: pd.DataFrame) -> str | None:
+    """Realized-side suggestion column: new runs use ``*_actual``, older CSVs ``*_oracle``."""
+    if "suggestion_actual" in df.columns:
+        return "suggestion_actual"
+    if "suggestion_oracle" in df.columns:
+        return "suggestion_oracle"
+    return None
+
+
 def style_backtest_detail_preview(df: pd.DataFrame) -> pd.DataFrame | pd.io.formats.style.Styler:
     """
     Row shading matching the downloaded .xlsx: green when ``suggestion_pred`` equals
-    ``suggestion_actual``, else red. Falls back to a plain frame if columns are missing.
+    ``suggestion_actual`` (or legacy ``suggestion_oracle`` if that column name is still present), else red.
+    Falls back to a plain frame if columns are missing.
     """
-    need = {"suggestion_pred", "suggestion_actual"}
-    if not need.issubset(df.columns):
+    act_col = _detail_suggestion_actual_column(df)
+    if act_col is None or "suggestion_pred" not in df.columns:
         return df
     match = (
         df["suggestion_pred"].astype(str).str.strip()
-        == df["suggestion_actual"].astype(str).str.strip()
+        == df[act_col].astype(str).str.strip()
     )
 
     def row_colors(row: pd.Series) -> list[str]:
@@ -307,7 +388,7 @@ def build_leaderboard(run_name: str, runs_root_str: str, loc_key: str, sym_filte
             "Symbol": sym,
             "Days correct": int(c),
             "Days total": int(t),
-            "Accuracy %": pct,
+            "Daily Prediction Accuracy $%": pct,
             "Equity pred ($)": round(fp, 2) if fp is not None else math.nan,
             "Equity actual ($)": round(fo, 2) if fo is not None else math.nan,
             "Return pred (%)": round(trp, 2) if trp is not None else math.nan,
@@ -317,7 +398,9 @@ def build_leaderboard(run_name: str, runs_root_str: str, loc_key: str, sym_filte
     out = pd.DataFrame(rows)
     if out.empty:
         return out
-    return out.sort_values(["Days correct", "Accuracy %"], ascending=[False, False]).reset_index(drop=True)
+    return out.sort_values(["Days correct", "Daily Prediction Accuracy $%"], ascending=[False, False]).reset_index(
+        drop=True
+    )
 
 
 def main() -> None:
@@ -393,8 +476,8 @@ def main() -> None:
     with tab_acc:
         st.markdown(MOVES_HELP_MD)
         st.markdown(
-            "Per-symbol **direction accuracy**: days where the model suggestion matched "
-            "the **sign of actual daily return** — same rule as green/red shading on the charts."
+            "Per-symbol **daily direction accuracy**: trading days where **`suggestion_pred`** matched the sign of "
+            "**`actual_daily_return`** in the detail CSV — same rule as green/red shading on the charts."
         )
         for i, rd in enumerate(run_paths):
             st.subheader(run_heading(rd))
@@ -404,11 +487,19 @@ def main() -> None:
             else:
                 st.metric("Symbols in table", len(lb))
                 st.caption(
-                    "Sorted by days correct, then accuracy %. "
-                    "Equity and return % match the run ``summary.csv`` when available (else last row of each detail CSV); "
-                    "same total-return definition as the equity chart (predicted vs actual paths)."
+                    "Sorted by **Days correct**, then **Daily Prediction Accuracy $%**. "
+                    "**Equity pred ($)** / **Equity actual ($)** / **Return pred (%)** / **Return actual (%)** use "
+                    "``summary.csv`` columns **`final_equity_predicted`**, **`final_equity_actual`**, "
+                    "**`total_return_predicted`**, **`total_return_actual`** when present; else last "
+                    "**`equity_predicted`** / **`equity_actual`** in each symbol’s detail CSV. "
+                    "Hover the **?** on each column header for definitions."
                 )
-                st.dataframe(arrow_safe_dataframe(lb), width="stretch", hide_index=True)
+                st.dataframe(
+                    arrow_safe_dataframe(lb),
+                    width="stretch",
+                    hide_index=True,
+                    column_config=dataframe_column_tooltips(lb, LEADERBOARD_COLUMN_HELP),
+                )
             if i < len(run_paths) - 1:
                 st.divider()
 
@@ -479,12 +570,21 @@ def main() -> None:
                 )
                 st.caption(
                     "Row colors match the downloaded .xlsx: green when `suggestion_pred` equals "
-                    "`suggestion_actual`, red otherwise (Excel theme: light green / light red fills)."
+                    "`suggestion_actual`, red otherwise (Excel theme: light green / light red fills). "
+                    "Hover the **?** on each column header for definitions."
                 )
                 try:
                     dfb = pd.read_excel(xlsx_bt, engine="openpyxl")
                     preview = style_backtest_detail_preview(arrow_safe_dataframe(dfb))
-                    st.dataframe(preview, height=320, width="stretch")
+                    st.dataframe(
+                        preview,
+                        height=320,
+                        width="stretch",
+                        column_config=dataframe_column_tooltips(
+                            preview,
+                            DETAIL_BACKTEST_COLUMN_HELP,
+                        ),
+                    )
                 except Exception as e:
                     st.warning(f"Preview failed: {e}")
             else:
@@ -507,9 +607,19 @@ def main() -> None:
             st.markdown("**Pilot sheet preview**")
             st.caption(
                 "This grid is read as plain data; any Excel-only formatting in the source "
-                "workbook is not shown in Streamlit. Open the download in Excel for full styling."
+                "workbook is not shown in Streamlit. Open the download in Excel for full styling. "
+                "Hover the **?** on each column header for definitions where available."
             )
-            st.dataframe(arrow_safe_dataframe(pilot_df), height=360, width="stretch")
+            st.dataframe(
+                arrow_safe_dataframe(pilot_df),
+                height=360,
+                width="stretch",
+                column_config=dataframe_column_tooltips(
+                    pilot_df,
+                    {},
+                    unknown_template=PILOT_COLUMN_HELP_FALLBACK,
+                ),
+            )
         else:
             st.caption("No matching sheet in the default pilot workbook (see filter_latest_summaries).")
 

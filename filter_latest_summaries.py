@@ -31,11 +31,16 @@ import re
 import shutil
 from pathlib import Path
 
+import openpyxl
 import pandas as pd
 
-from symbol_graph_tools import write_all_symbol_graphs_for_folder
+from symbol_graph_tools import (
+    rename_dataframe_columns_oracle_to_actual,
+    write_all_symbol_graphs_for_folder,
+)
 
 RUN_DIR_PATTERN = re.compile(r"^\d{8}_\d{6}$")
+_ORACLE_IN_HEADER = re.compile("oracle", re.IGNORECASE)
 
 # Client pilot workbook shipped in this repo (repo root, next to this script).
 DEFAULT_PORTFOLIO_XLSX = "compiled predictions vs actuals wide V 1.0.xlsx"
@@ -87,6 +92,64 @@ def symbol_column(df: pd.DataFrame) -> str:
         if str(c).upper() == "SYMBOL":
             return c
     raise KeyError("No SYMBOL/symbol column in summary CSV")
+
+
+def normalize_run_folder_csvs(run_dir: Path) -> int:
+    """
+    Rewrite every ``*.csv`` under ``run_dir`` whose headers contain ``oracle`` (case-insensitive),
+    replacing that substring with ``actual`` in column names only.
+    """
+    n = 0
+    if not run_dir.is_dir():
+        return 0
+    for path in sorted(run_dir.rglob("*.csv")):
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        fixed = rename_dataframe_columns_oracle_to_actual(df)
+        if list(fixed.columns) == list(df.columns):
+            continue
+        fixed.to_csv(path, index=False)
+        n += 1
+    return n
+
+
+def normalize_run_folder_xlsx_headers(run_dir: Path) -> int:
+    """
+    For each ``*.xlsx`` under ``run_dir``, replace ``oracle`` with ``actual`` in **row 1** cell text
+    (column headers). Other rows and formatting are left unchanged.
+    """
+    n = 0
+    if not run_dir.is_dir():
+        return 0
+    for path in sorted(run_dir.rglob("*.xlsx")):
+        try:
+            wb = openpyxl.load_workbook(path)
+        except Exception:
+            continue
+        changed = False
+        try:
+            for ws in wb.worksheets:
+                for cell in ws[1]:
+                    v = cell.value
+                    if v is None or not isinstance(v, str):
+                        continue
+                    if not _ORACLE_IN_HEADER.search(v):
+                        continue
+                    cell.value = _ORACLE_IN_HEADER.sub("actual", v)
+                    changed = True
+            if changed:
+                wb.save(path)
+                n += 1
+        except Exception:
+            pass
+        finally:
+            try:
+                wb.close()
+            except Exception:
+                pass
+    return n
 
 
 def latest_run_dirs(output_base: Path, n: int = 2) -> list[Path]:
@@ -306,15 +369,48 @@ def main() -> None:
         action="store_true",
         help="Skip JPEG charts under filter/<SYMBOL>/.",
     )
+    ap.add_argument(
+        "--normalize-oracle-headers-only",
+        action="store_true",
+        help="Under each timestamped run: replace oracle->actual in CSV column names and in row 1 of "
+        "each .xlsx, then exit.",
+    )
     args = ap.parse_args()
 
     output_base = args.output_dir.resolve()
+    if args.normalize_oracle_headers_only:
+        if not output_base.is_dir():
+            raise FileNotFoundError(f"Output base not found: {output_base}")
+        total_files = 0
+        run_paths = sorted(
+            (p for p in output_base.iterdir() if p.is_dir() and RUN_DIR_PATTERN.match(p.name)),
+            key=lambda x: x.name,
+            reverse=True,
+        )
+        total_xlsx = 0
+        for run_path in run_paths:
+            n_csv = normalize_run_folder_csvs(run_path)
+            n_xlsx = normalize_run_folder_xlsx_headers(run_path)
+            if n_csv or n_xlsx:
+                print(f"{run_path.name}: {n_csv} CSV, {n_xlsx} XLSX")
+            total_files += n_csv
+            total_xlsx += n_xlsx
+        print(f"Done. CSV header fixes: {total_files} file(s); XLSX header row fixes: {total_xlsx} file(s).")
+        return
+
     portfolio_path = resolve_portfolio_workbook(root, args.portfolio_xlsx)
     portfolio_map = load_portfolio_by_symbol(portfolio_path, FILTER_SYMBOLS)
 
     run_dirs = latest_run_dirs(output_base, n=2)
 
     for run_path in run_dirs:
+        n_csv = normalize_run_folder_csvs(run_path)
+        n_xlsx = normalize_run_folder_xlsx_headers(run_path)
+        if n_csv or n_xlsx:
+            print(
+                f"{run_path.name}: normalized `oracle` -> `actual` in {n_csv} CSV header(s) "
+                f"and {n_xlsx} XLSX workbook(s)"
+            )
         csv_path = run_path / args.summary_filename
         if not csv_path.is_file():
             raise FileNotFoundError(f"Missing {csv_path}")
